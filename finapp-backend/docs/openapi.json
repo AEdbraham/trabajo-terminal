@@ -1,0 +1,320 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "FinApp Backend API",
+    "version": "1.0.0",
+    "description": "API de analytics y metas. Autenticación via Bearer JWT."
+  },
+  "servers": [
+    { "url": "http://localhost:3000" }
+  ],
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {
+      "Resumen": {
+        "type": "object",
+        "properties": {
+          "ingresos": { "type": "number" },
+          "egresos": { "type": "number" },
+          "ahorro": { "type": "number" }
+        }
+      },
+      "SerieItem": {
+        "type": "object",
+        "properties": {
+          "año": { "type": "integer" },
+          "mes": { "type": "integer" },
+          "ingresos": { "type": "number" },
+          "egresos": { "type": "number" },
+          "ahorro": { "type": "number" }
+        }
+      },
+      "ComposicionItem": {
+        "type": "object",
+        "properties": {
+          "categoriaId": { "type": "string" },
+          "nombre": { "type": "string" },
+          "total": { "type": "number" },
+          "porcentaje": { "type": "number" }
+        }
+      },
+      "Variacion": {
+        "type": "object",
+        "properties": {
+          "periodo": { "type": "object", "properties": { "año": {"type":"integer"}, "mes": {"type":"integer"} } },
+          "mesAnterior": { "type": "object", "properties": { "año": {"type":"integer"}, "mes": {"type":"integer"} } },
+          "actual": { "$ref": "#/components/schemas/Resumen" },
+          "anterior": { "$ref": "#/components/schemas/Resumen" },
+          "variacionIngresos": { "type": ["number","null"] },
+          "variacionEgresos": { "type": ["number","null"] },
+          "variacionAhorro": { "type": ["number","null"] },
+          "vsPresupuestoEgresos": { "type": ["number","null"] }
+        }
+      },
+      "CohorteItem": {
+        "type": "object",
+        "properties": {
+          "año": { "type": "integer" },
+          "mes": { "type": "integer" },
+          "usuarios": { "type": "integer" },
+          "activosPeriodo": { "type": "integer" },
+          "tasaActividad": { "type": "number" }
+        }
+      },
+      "SegmentoItem": {
+        "type": "object",
+        "properties": {
+          "incomeTier": { "type": "string" },
+          "usuarios": { "type": "integer" },
+          "ahorroRatePromedio": { "type": "number" }
+        }
+      },
+      "Meta": {
+        "type": "object",
+        "properties": {
+          "_id": { "type": "string" },
+          "usuario": { "type": "string" },
+          "tipo": { "type": "string", "enum": ["presupuesto-mensual","ahorro","deuda"] },
+          "montoObjetivo": { "type": "number" },
+          "montoActual": { "type": "number" },
+          "fechaLimite": { "type": ["string","null"], "format": "date-time" },
+          "mes": { "type": ["integer","null"] },
+          "año": { "type": ["integer","null"] },
+          "estado": { "type": "string" }
+        }
+      },
+      "ProgresoMeta": {
+        "type": "object",
+        "properties": {
+          "metaId": { "type": "string" },
+          "tipo": { "type": "string" },
+          "usuario": { "type": "string" },
+          "periodo": { "type": ["object","null"] },
+          "montoObjetivo": { "type": "number" },
+          "montoActual": { "type": "number" },
+          "restante": { "type": "number" },
+          "porcentaje": { "type": "number" },
+          "diasRestantes": { "type": ["integer","null"] }
+        }
+      }
+    }
+  },
+  "security": [ { "BearerAuth": [] } ],
+  "paths": {
+    "/api/auth/register": {
+      "post": {
+        "tags": ["auth"],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["nombre","correo","password"], "properties": {"nombre": {"type":"string"}, "correo": {"type":"string","format":"email"}, "password": {"type":"string","format":"password"}}}}}},
+        "responses": {"201": {"description": "Registrado", "content": {"application/json": {"schema": {"type":"object"}}}}}
+      }
+    },
+    "/api/auth/login": {
+      "post": {
+        "tags": ["auth"],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["correo","password"], "properties": {"correo": {"type":"string","format":"email"}, "password": {"type":"string","format":"password"}}}}}},
+        "responses": {"200": {"description": "OK", "content": {"application/json": {"schema": {"type":"object","properties":{"accessToken":{"type":"string"},"refreshToken":{"type":"string"}}}}}}}
+      }
+    },
+    "/api/auth/refresh": {
+      "post": {
+        "tags": ["auth"],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["refreshToken"], "properties": {"refreshToken": {"type":"string"}}}}}},
+        "responses": {"200": {"description": "OK", "content": {"application/json": {"schema": {"type":"object","properties":{"accessToken":{"type":"string"}}}}}}}
+      }
+    },
+    "/api/auth/logout": {
+      "post": {
+        "tags": ["auth"],
+        "requestBody": {"required": false, "content": {"application/json": {"schema": {"type": "object", "properties": {"refreshToken": {"type":"string"}}}}}},
+        "responses": {"200": {"description": "OK"}}
+      }
+    },
+    "/api/usuarios": {
+      "get": {"tags":["usuarios"], "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"array","items":{"type":"object"}}}}}}, "security": [{"BearerAuth":[]} ]},
+      "post": {"tags":["usuarios"], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object"}}}}, "responses": {"201": {"description":"Creado"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/usuarios/{id}": {
+      "get": {"tags":["usuarios"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object"}}}}, "404": {"description":"No encontrado"}}, "security": [{"BearerAuth":[]} ]},
+      "put": {"tags":["usuarios"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object"}}}}, "responses": {"200": {"description":"OK"}, "404": {"description":"No encontrado"}}, "security": [{"BearerAuth":[]} ]},
+      "delete": {"tags":["usuarios"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"204": {"description":"Eliminado"}, "404": {"description":"No encontrado"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/transacciones": {
+      "post": {"tags":["transacciones"], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["usuarioId","tipo","monto","fecha"], "properties": {"usuarioId": {"type":"string"}, "tipo": {"type":"string","enum":["ingreso","egreso"]}, "monto": {"type":"number"}, "fecha": {"type":"string","format":"date-time"}, "categoriaId": {"type":"string"}, "etiquetas": {"type":"array","items":{"type":"string"}}}}}}}, "responses": {"201": {"description":"Creada"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/transacciones/usuario/{usuarioId}": {
+      "get": {"tags":["transacciones"], "parameters": [{"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}}, {"name":"page","in":"query","schema":{"type":"integer","default":1}}, {"name":"limit","in":"query","schema":{"type":"integer","default":20}}, {"name":"from","in":"query","schema":{"type":"string","format":"date-time"}}, {"name":"to","in":"query","schema":{"type":"string","format":"date-time"}}, {"name":"categoriaId","in":"query","schema":{"type":"string"}}, {"name":"tipo","in":"query","schema":{"type":"string","enum":["ingreso","egreso"]}}], "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"array","items":{"type":"object"}},"meta":{"type":"object"}}}}}}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/transacciones/{id}": {
+      "get": {"tags":["transacciones"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"200": {"description":"OK"}, "404": {"description":"No encontrada"}}, "security": [{"BearerAuth":[]} ]},
+      "put": {"tags":["transacciones"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object"}}}}, "responses": {"200": {"description":"OK"}, "404": {"description":"No encontrada"}}, "security": [{"BearerAuth":[]} ]},
+      "delete": {"tags":["transacciones"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"204": {"description":"Eliminada"}, "404": {"description":"No encontrada"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/categories": {
+      "get": {"tags":["categorias"], "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"array","items":{"type":"object"}}}}}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/education/capsules": {
+      "get": {"tags":["contenido-publico"], "parameters": [{"name":"page","in":"query","schema":{"type":"integer","default":1}}, {"name":"limit","in":"query","schema":{"type":"integer","default":20}}], "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"array","items":{"type":"object"}},"meta":{"type":"object"}}}}}}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/education/capsules/{id}": {
+      "get": {"tags":["contenido-publico"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"200": {"description":"OK"}, "404": {"description":"No encontrado"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/education/search": {
+      "get": {"tags":["contenido-publico"], "parameters": [{"name":"text","in":"query","schema":{"type":"string"}}, {"name":"tema","in":"query","schema":{"type":"string"}}, {"name":"etiqueta","in":"query","schema":{"type":"string"}}, {"name":"tipo","in":"query","schema":{"type":"string"}}, {"name":"nivel","in":"query","schema":{"type":"string"}}, {"name":"page","in":"query","schema":{"type":"integer","default":1}}, {"name":"limit","in":"query","schema":{"type":"integer","default":20}}], "responses": {"200": {"description":"OK"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/education/{id}/like": {
+      "post": {"tags":["contenido-publico"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}, {"name":"tipo","in":"query","required":true,"schema":{"type":"string","enum":["like","dislike"]}}], "responses": {"200": {"description":"OK"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/admin/content": {
+      "get": {"tags":["contenido-admin"], "responses": {"200": {"description":"OK"}}, "security": [{"BearerAuth":[]} ]},
+      "post": {"tags":["contenido-admin"], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object"}}}}, "responses": {"201": {"description":"Creado"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/admin/content/{id}": {
+      "put": {"tags":["contenido-admin"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object"}}}}, "responses": {"200": {"description":"OK"}, "404": {"description":"No encontrado"}}, "security": [{"BearerAuth":[]} ]},
+      "delete": {"tags":["contenido-admin"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"204": {"description":"Eliminado"}, "404": {"description":"No encontrado"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/recommendations/{usuarioId}": {
+      "get": {"tags":["recomendaciones"], "parameters": [{"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"array","items":{"type":"object"}}}}}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/recommendations/generar": {
+      "post": {"tags":["recomendaciones"], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object","required":["usuarioId"],"properties":{"usuarioId":{"type":"string"},"area":{"type":"string","enum":["ahorro","inversion","credito"]}}}}}}, "responses": {"201": {"description":"Generadas"}, "200": {"description":"Sin nuevas"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/analisis/{usuarioId}": {
+      "get": {"tags":["analisis"], "parameters": [{"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"200": {"description":"OK"}, "404": {"description":"Sin análisis"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/analisis/{usuarioId}/{mes}/{anio}": {
+      "get": {"tags":["analisis"], "parameters": [{"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}}, {"name":"mes","in":"path","required":true,"schema":{"type":"integer"}}, {"name":"anio","in":"path","required":true,"schema":{"type":"integer"}}], "responses": {"200": {"description":"OK"}, "404": {"description":"No existe"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/analisis/generar": {
+      "post": {"tags":["analisis"], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object","required":["usuarioId","periodo"],"properties":{"usuarioId":{"type":"string"},"periodo":{"type":"object","properties":{"mes":{"type":"integer"},"año":{"type":"integer"}},"required":["mes","año"]}}}}}}, "responses": {"201": {"description":"Creado"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/analytics/usuario/resumen": {
+      "get": {
+        "tags": ["analytics-usuario"],
+        "parameters": [
+          {"name":"from","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"to","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"usuarioId","in":"query","schema":{"type":"string"},"description":"Solo admin"}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Resumen"}}}}}
+      }
+    },
+    "/api/analytics/usuario/serie": {
+      "get": {
+        "tags": ["analytics-usuario"],
+        "parameters": [
+          {"name":"from","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"to","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"usuarioId","in":"query","schema":{"type":"string"}}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"serie":{"type":"array","items":{"$ref":"#/components/schemas/SerieItem"}}}}}}}}
+      }
+    },
+    "/api/analytics/usuario/composicion": {
+      "get": {
+        "tags": ["analytics-usuario"],
+        "parameters": [
+          {"name":"from","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"to","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"usuarioId","in":"query","schema":{"type":"string"}},
+          {"name":"top","in":"query","schema":{"type":"integer","default":5}}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"totalEgresos":{"type":"number"},"items":{"type":"array","items":{"$ref":"#/components/schemas/ComposicionItem"}},"otros":{"type":"number"}}}}}}}
+      }
+    },
+    "/api/analytics/usuario/racha": {
+      "get": {
+        "tags": ["analytics-usuario"],
+        "parameters": [
+          {"name":"from","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"to","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"usuarioId","in":"query","schema":{"type":"string"}}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"rachaMaxima":{"type":"integer"}}}}}}}
+      }
+    },
+    "/api/analytics/usuario/dti": {
+      "get": {
+        "tags": ["analytics-usuario"],
+        "parameters": [
+          {"name":"from","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"to","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"usuarioId","in":"query","schema":{"type":"string"}}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"dti":{"type":"number"}}}}}}}
+      }
+    },
+    "/api/analytics/usuario/variacion": {
+      "get": {
+        "tags": ["analytics-usuario"],
+        "parameters": [
+          {"name":"año","in":"query","schema":{"type":"integer"}},
+          {"name":"mes","in":"query","schema":{"type":"integer"}},
+          {"name":"usuarioId","in":"query","schema":{"type":"string"}},
+          {"name":"allowZeroBase","in":"query","schema":{"type":"boolean","default":false}},
+          {"name":"presupuesto","in":"query","schema":{"type":"number"}}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Variacion"}}}}}
+      }
+    },
+    "/api/analytics/admin/cohortes": {
+      "get": {
+        "tags": ["analytics-admin"],
+        "parameters": [
+          {"name":"from","in":"query","required":true,"schema":{"type":"string","format":"date-time"}},
+          {"name":"to","in":"query","required":true,"schema":{"type":"string","format":"date-time"}}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"periodo":{"type":"object"},"cohorts":{"type":"array","items":{"$ref":"#/components/schemas/CohorteItem"}},"totales":{"type":"object"}}}}}}}
+      }
+    },
+    "/api/analytics/admin/segmentacion": {
+      "get": {
+        "tags": ["analytics-admin"],
+        "parameters": [
+          {"name":"from","in":"query","required":true,"schema":{"type":"string","format":"date-time"}},
+          {"name":"to","in":"query","required":true,"schema":{"type":"string","format":"date-time"}}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"periodo":{"type":"object"},"grupos":{"type":"array","items":{"$ref":"#/components/schemas/SegmentoItem"}},"detalles":{"type":"array","items":{"type":"object"}}}}}}}}
+      }
+    },
+    "/api/metas": {
+      "post": {
+        "tags": ["metas"],
+        "requestBody": {"required":true,"content":{"application/json":{"schema":{"type":"object","required":["tipo","montoObjetivo"],"properties":{"tipo":{"type":"string","enum":["presupuesto-mensual","ahorro","deuda"]},"montoObjetivo":{"type":"number"},"mes":{"type":"integer"},"año":{"type":"integer"}}}}}},
+        "responses": {"201": {"description":"Creada","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Meta"}}}}}
+      }
+    },
+    "/api/metas/usuario/{usuarioId}": {
+      "get": {
+        "tags": ["metas"],
+        "parameters": [ {"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}} ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/Meta"}}}}}}
+      }
+    },
+    "/api/metas/{id}": {
+      "patch": {
+        "tags": ["metas"],
+        "parameters": [ {"name":"id","in":"path","required":true,"schema":{"type":"string"}} ],
+        "requestBody": {"required":true,"content":{"application/json":{"schema":{"type":"object"}}}},
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Meta"}}}},"404":{"description":"No encontrada"}}
+      },
+      "delete": {
+        "tags": ["metas"],
+        "parameters": [ {"name":"id","in":"path","required":true,"schema":{"type":"string"}} ],
+        "responses": {"204": {"description":"Eliminada"},"404":{"description":"No encontrada"}}
+      }
+    },
+    "/api/metas/{id}/progreso": {
+      "get": {
+        "tags": ["metas"],
+        "parameters": [ {"name":"id","in":"path","required":true,"schema":{"type":"string"}} ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"$ref":"#/components/schemas/ProgresoMeta"}}}},"404":{"description":"No encontrada"}}
+      }
+    }
+  }
+}
