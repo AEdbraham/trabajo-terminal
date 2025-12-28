@@ -150,6 +150,9 @@
     "/api/transacciones/usuario/{usuarioId}": {
       "get": {"tags":["transacciones"], "parameters": [{"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}}, {"name":"page","in":"query","schema":{"type":"integer","default":1}}, {"name":"limit","in":"query","schema":{"type":"integer","default":20}}, {"name":"from","in":"query","schema":{"type":"string","format":"date-time"}}, {"name":"to","in":"query","schema":{"type":"string","format":"date-time"}}, {"name":"categoriaId","in":"query","schema":{"type":"string"}}, {"name":"tipo","in":"query","schema":{"type":"string","enum":["ingreso","egreso"]}}], "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"array","items":{"type":"object"}},"meta":{"type":"object"}}}}}}}, "security": [{"BearerAuth":[]} ]}
     },
+    "/api/transacciones/usuario/{usuarioId}/count": {
+      "get": {"tags":["transacciones"], "parameters": [{"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"total":{"type":"integer"}}}}}}}, "security": [{"BearerAuth":[]} ]}
+    },
     "/api/transacciones/{id}": {
       "get": {"tags":["transacciones"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"200": {"description":"OK"}, "404": {"description":"No encontrada"}}, "security": [{"BearerAuth":[]} ]},
       "put": {"tags":["transacciones"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object"}}}}, "responses": {"200": {"description":"OK"}, "404": {"description":"No encontrada"}}, "security": [{"BearerAuth":[]} ]},
@@ -183,15 +186,6 @@
     },
     "/api/recommendations/generar": {
       "post": {"tags":["recomendaciones"], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object","required":["usuarioId"],"properties":{"usuarioId":{"type":"string"},"area":{"type":"string","enum":["ahorro","inversion","credito"]}}}}}}, "responses": {"201": {"description":"Generadas"}, "200": {"description":"Sin nuevas"}}, "security": [{"BearerAuth":[]} ]}
-    },
-    "/api/analisis/{usuarioId}": {
-      "get": {"tags":["analisis"], "parameters": [{"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"200": {"description":"OK"}, "404": {"description":"Sin análisis"}}, "security": [{"BearerAuth":[]} ]}
-    },
-    "/api/analisis/{usuarioId}/{mes}/{anio}": {
-      "get": {"tags":["analisis"], "parameters": [{"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}}, {"name":"mes","in":"path","required":true,"schema":{"type":"integer"}}, {"name":"anio","in":"path","required":true,"schema":{"type":"integer"}}], "responses": {"200": {"description":"OK"}, "404": {"description":"No existe"}}, "security": [{"BearerAuth":[]} ]}
-    },
-    "/api/analisis/generar": {
-      "post": {"tags":["analisis"], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object","required":["usuarioId","periodo"],"properties":{"usuarioId":{"type":"string"},"periodo":{"type":"object","properties":{"mes":{"type":"integer"},"año":{"type":"integer"}},"required":["mes","año"]}}}}}}, "responses": {"201": {"description":"Creado"}}, "security": [{"BearerAuth":[]} ]}
     },
     "/api/analytics/usuario/resumen": {
       "get": {
@@ -294,6 +288,13 @@
         "tags": ["metas"],
         "parameters": [ {"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}} ],
         "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/Meta"}}}}}}
+      }
+    },
+    "/api/metas/usuario/{usuarioId}/activas/count": {
+      "get": {
+        "tags": ["metas"],
+        "parameters": [ {"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}} ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"totalActivas":{"type":"integer"},"porTipo":{"type":"object","properties":{"presupuesto-mensual":{"type":"integer"},"ahorro":{"type":"integer"},"deuda":{"type":"integer"}}}}}}}}}
       }
     },
     "/api/metas/{id}": {

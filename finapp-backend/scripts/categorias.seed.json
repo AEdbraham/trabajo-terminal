@@ -1,0 +1,195 @@
+{
+  "egresos": [
+    {
+      "nombre": "Alimentación",
+      "subcategorias": [
+        "Supermercado",
+        "Abarrotes/OXXO/tiendita",
+        "Restaurantes y cafés",
+        "Entrega a domicilio (Rappi, Uber Eats, Didi Food)"
+      ]
+    },
+    {
+      "nombre": "Vivienda",
+      "subcategorias": [
+        "Renta / Hipoteca",
+        "Mantenimiento / Reparaciones",
+        "Servicios del edificio / Cuota condominio",
+        "Amueblado / Electrodomésticos"
+      ]
+    },
+    {
+      "nombre": "Servicios del hogar",
+      "subcategorias": [
+        "Electricidad (CFE)",
+        "Agua",
+        "Gas",
+        "Internet/Telefonía (Telmex, Izzi, Totalplay)",
+        "Celular (Telcel, AT&T, Movistar)"
+      ]
+    },
+    {
+      "nombre": "Transporte",
+      "subcategorias": [
+        "Público (Metro, Metrobús, RTP)",
+        "Combustible (gasolina)",
+        "Estacionamiento",
+        "Peajes",
+        "Mantenimiento vehicular",
+        "Plataformas (Uber, Didi, Beat)"
+      ]
+    },
+    {
+      "nombre": "Salud",
+      "subcategorias": [
+        "Farmacia",
+        "Consultas/Estudios",
+        "Seguros de gastos médicos",
+        "Dental/Óptica"
+      ]
+    },
+    {
+      "nombre": "Educación",
+      "subcategorias": [
+        "Colegiaturas/Inscripciones",
+        "Cursos/Capacitaciones (en línea o presencial)",
+        "Material didáctico/Libros"
+      ]
+    },
+    {
+      "nombre": "Seguros",
+      "subcategorias": [
+        "Auto",
+        "Vida",
+        "Hogar",
+        "Otros (desempleo, dispositivos, etc.)"
+      ]
+    },
+    {
+      "nombre": "Deuda y Comisiones",
+      "subcategorias": [
+        "Pago a tarjeta de crédito",
+        "Crédito personal/auto/hipoteca (amortización)",
+        "Intereses",
+        "Comisiones bancarias (anualidad, disposición de efectivo, SPEI)"
+      ]
+    },
+    {
+      "nombre": "Ahorro e Inversión",
+      "subcategorias": [
+        "Aporte a ahorro",
+        "Aporte CETES/GBM/u otro bróker",
+        "AFORE voluntario"
+      ]
+    },
+    {
+      "nombre": "Impuestos y Trámites",
+      "subcategorias": [
+        "SAT (ISR/IVA), derechos, multas",
+        "Gobierno (tenencia, verificación, predial, pasaporte)"
+      ]
+    },
+    {
+      "nombre": "Ropa y Personales",
+      "subcategorias": [
+        "Ropa/Calzado",
+        "Higiene/Personales"
+      ]
+    },
+    {
+      "nombre": "Entretenimiento y Cultura",
+      "subcategorias": [
+        "Streaming (Netflix, Spotify, etc.)",
+        "Cine/Conciertos/Eventos",
+        "Libros/Juegos"
+      ]
+    },
+    {
+      "nombre": "Viajes y Turismo",
+      "subcategorias": [
+        "Vuelos/Autobuses",
+        "Hospedaje",
+        "Tours"
+      ]
+    },
+    {
+      "nombre": "Familia y Dependientes",
+      "subcategorias": [
+        "Guardería/Cuidado",
+        "Colegiaturas de hijos",
+        "Apoyos familiares"
+      ]
+    },
+    {
+      "nombre": "Mascotas",
+      "subcategorias": [
+        "Alimento",
+        "Veterinario",
+        "Accesorios"
+      ]
+    },
+    {
+      "nombre": "Donativos y Caridad",
+      "subcategorias": [
+        "Donativos"
+      ]
+    },
+    {
+      "nombre": "Otros egresos (comodín)",
+      "subcategorias": []
+    },
+    {
+      "nombre": "Otro",
+      "subcategorias": []
+    }
+  ],
+  "ingresos": [
+    {
+      "nombre": "Nómina/Salario",
+      "subcategorias": [
+        "Sueldo",
+        "Aguinaldo/Bonos/Prima vacacional"
+      ]
+    },
+    {
+      "nombre": "Honorarios/Servicios",
+      "subcategorias": [
+        "Freelance/Contratos"
+      ]
+    },
+    {
+      "nombre": "Ventas",
+      "subcategorias": [
+        "Marketplace/Local"
+      ]
+    },
+    {
+      "nombre": "Remesas y Apoyos",
+      "subcategorias": [
+        "Remesas",
+        "Apoyo/Beca/Pensión"
+      ]
+    },
+    {
+      "nombre": "Rendimientos y Dividendos",
+      "subcategorias": [
+        "Intereses (cuentas, pagarés)",
+        "Dividendos",
+        "Rendimientos de inversión (CETES, fondos)"
+      ]
+    },
+    {
+      "nombre": "Reembolsos y Devoluciones",
+      "subcategorias": [
+        "Reembolso de gastos",
+        "Devolución de tienda"
+      ]
+    },
+    {
+      "nombre": "Préstamos Recibidos",
+      "subcategorias": [
+        "Terceros (amigos/familia)"
+      ]
+    }
+  ]
+}

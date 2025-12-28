@@ -36,7 +36,7 @@ export const obtenerKPIs = asyncHandler(async (req, res) => {
   const filtro = usuarioId ? { usuarioId } : {};
   const ultimo = await IndicadorKPI.findOne(filtro).sort({ fechaCalculo: -1 });
   if (!ultimo) return res.status(404).json({ message: "No hay KPIs calculados" });
-  res.json(ultimo);
+  res.json(ultimo);a
 });
 
 // Serie temporal mensual de ingresos y egresos

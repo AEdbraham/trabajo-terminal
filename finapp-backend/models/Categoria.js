@@ -8,4 +8,7 @@ const categoriaSchema = new mongoose.Schema({
     icono: String,
 });
 
+// Evita duplicados por nombre+tipo y permite re-ejecutar la semilla de forma idempotente
+categoriaSchema.index({ nombre: 1, tipo: 1 }, { unique: true });
+
 export default mongoose.model("Categoria", categoriaSchema);

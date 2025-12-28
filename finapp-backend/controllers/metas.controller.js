@@ -42,6 +42,22 @@ export const eliminarMeta = asyncHandler(async (req, res) => {
   res.status(204).send();
 });
 
+// GET /metas/usuario/:usuarioId/activas/count
+export const contarMetasActivas = asyncHandler(async (req, res) => {
+  const { usuarioId } = req.params;
+  const match = { usuario: usuarioId, estado: 'activa' };
+  const [totalActivas, grupos] = await Promise.all([
+    Meta.countDocuments(match),
+    Meta.aggregate([
+      { $match: match },
+      { $group: { _id: '$tipo', count: { $sum: 1 } } }
+    ])
+  ]);
+  const porTipo = { 'presupuesto-mensual': 0, 'ahorro': 0, 'deuda': 0 };
+  for (const g of grupos) porTipo[g._id] = g.count;
+  res.json({ totalActivas, porTipo });
+});
+
 // GET /metas/:id/progreso
 export const progresoMeta = asyncHandler(async (req, res) => {
   const meta = await Meta.findById(req.params.id);

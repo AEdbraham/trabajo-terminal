@@ -70,3 +70,9 @@ export const eliminarTransaccion = asyncHandler(async (req, res) => {
   await Transaccion.findByIdAndDelete(req.params.id);
   res.status(204).send();
 });
+
+export const contarTransaccionesUsuario = asyncHandler(async (req, res) => {
+  const { usuarioId } = req.params;
+  const total = await Transaccion.countDocuments({ usuarioId });
+  res.json({ total });
+});

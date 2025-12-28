@@ -9,7 +9,6 @@ import categoriaRoutes from "./routes/categorias.routes.js";
 import contenidoPublicRoutes from "./routes/contenido.public.routes.js";
 import contenidoAdminRoutes from "./routes/contenido.admin.routes.js";
 import recomendacionesRoutes from "./routes/recomendaciones.routes.js";
-import analisisRoutes from "./routes/analisis.routes.js";
 import analyticsRoutes from "./routes/analytics.routes.js";
 import metasRoutes from "./routes/metas.routes.js";
 import swaggerUi from "swagger-ui-express";
@@ -33,7 +32,6 @@ app.use("/api/categories", categoriaRoutes);
 app.use("/api/education", contenidoPublicRoutes);
 app.use("/api/admin/content", contenidoAdminRoutes);
 app.use("/api/recommendations", recomendacionesRoutes); 
-app.use("/api/analisis", analisisRoutes);
 app.use("/api/analytics", analyticsRoutes);
 app.use("/api/metas", metasRoutes);
 
