@@ -11,6 +11,8 @@ import contenidoAdminRoutes from "./routes/contenido.admin.routes.js";
 import recomendacionesRoutes from "./routes/recomendaciones.routes.js";
 import analyticsRoutes from "./routes/analytics.routes.js";
 import metasRoutes from "./routes/metas.routes.js";
+import preguntasRoutes from "./routes/preguntas.routes.js";
+import examenesRoutes from "./routes/examenes.routes.js";
 import swaggerUi from "swagger-ui-express";
 import fs from "fs";
 import path from "path";
@@ -34,6 +36,8 @@ app.use("/api/admin/content", contenidoAdminRoutes);
 app.use("/api/recommendations", recomendacionesRoutes); 
 app.use("/api/analytics", analyticsRoutes);
 app.use("/api/metas", metasRoutes);
+app.use("/api/preguntas", preguntasRoutes);
+app.use("/api/examenes", examenesRoutes);
 
 // Swagger UI
 try {

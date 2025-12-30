@@ -148,7 +148,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"correo\": \"juan@mail.com\",\r\n\"password\": \"Secreta123\"\r\n}",
+									"raw": "{\r\n\"correo\": \"gustavo@gmail.com\",\r\n\"password\": \"12345678\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1710,7 +1710,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n    \"tipo\": \"ingreso\",\r\n    \"monto\": 10000,\r\n    \"fecha\": \"2025-03-22T00:00:00.000Z\",\r\n    \"etiquetas\": [\"ahorro\"]\r\n}",
+									"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n    \"tipo\": \"egreso\",\r\n    \"monto\": 1000,\r\n    \"fecha\": \"2025-12-22T00:00:00.000Z\",\r\n    \"etiquetas\": [\"ahorro\"],\r\n    \"categoriaId\": \"694a5784bb54698ab8e3ee9b\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2218,6 +2218,68 @@
 										"api",
 										"transacciones",
 										"{{transaccionId}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Total de transacciones",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}/count",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"transacciones",
+								"usuario",
+								"{{usuarioId}}",
+								"count"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Total de transacciones",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}/count",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"transacciones",
+										"usuario",
+										"{{usuarioId}}",
+										"count"
 									]
 								}
 							},
@@ -2752,7 +2814,7 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/composicion?from=2025-02-01&to=2025-12-28",
+									"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/composicion?from=2025-12-01&to=2025-12-28",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
@@ -2767,7 +2829,7 @@
 									"query": [
 										{
 											"key": "from",
-											"value": "2025-02-01"
+											"value": "2025-12-01"
 										},
 										{
 											"key": "to",
@@ -3106,288 +3168,11 @@
 			]
 		},
 		{
-			"name": "Analisis",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer {{accessToken}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n    \"periodo\": {\r\n        \"mes\": 11,\r\n        \"año\": 2025\r\n    },\r\n    \"resumen\": {\r\n        \"ingresosTotales\": 1500,\r\n        \"egresosTotales\": 800,\r\n        \"ahorro\": 700,\r\n        \"dti\": 0.25\r\n    }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://{{baseUrl}}:4000/api/analisis/generar",
-					"protocol": "http",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"port": "4000",
-					"path": [
-						"api",
-						"analisis",
-						"generar"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "Analisis",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{accessToken}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n    \"periodo\": {\r\n        \"mes\": 11,\r\n        \"año\": 2025\r\n    },\r\n    \"resumen\": {\r\n        \"ingresosTotales\": 1500,\r\n        \"egresosTotales\": 800,\r\n        \"ahorro\": 700,\r\n        \"dti\": 0.25\r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analisis/generar",
-							"protocol": "http",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"analisis",
-								"generar"
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"body": null
-				},
-				{
-					"name": "Analisis sin periodo",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{accessToken}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n \r\n    \"resumen\": {\r\n        \"ingresosTotales\": 1500,\r\n        \"egresosTotales\": 800,\r\n        \"ahorro\": 700,\r\n        \"dti\": 0.25\r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analisis/generar",
-							"protocol": "http",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"analisis",
-								"generar"
-							]
-						}
-					},
-					"_postman_previewlanguage": "",
-					"header": [],
-					"cookie": [
-						{
-							"expires": "Invalid Date",
-							"domain": "",
-							"path": ""
-						}
-					],
-					"body": ""
-				}
-			]
-		},
-		{
-			"name": "Analisis",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer {{accessToken}}",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "http://{{baseUrl}}:4000/api/analisis/{{usuarioId}}",
-					"protocol": "http",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"port": "4000",
-					"path": [
-						"api",
-						"analisis",
-						"{{usuarioId}}"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "Analisis",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{accessToken}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n    \"periodo\": {\r\n        \"mes\": 11,\r\n        \"año\": 2025\r\n    },\r\n    \"resumen\": {\r\n        \"ingresosTotales\": 1500,\r\n        \"egresosTotales\": 800,\r\n        \"ahorro\": 700,\r\n        \"dti\": 0.25\r\n    }\r\n}"
-						},
-						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analisis/{{usuarioId}}",
-							"protocol": "http",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"analisis",
-								"{{usuarioId}}"
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"body": null
-				},
-				{
-					"name": "Analisis historico",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{accessToken}}",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analisis/{{usuarioId}}/{{fecha}}",
-							"protocol": "http",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"analisis",
-								"{{usuarioId}}",
-								"{{fecha}}"
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"body": null
-				},
-				{
-					"name": "Analisis historico inexistente",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{accessToken}}",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analisis/{{usuarioId}}/10/1990",
-							"protocol": "http",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"analisis",
-								"{{usuarioId}}",
-								"10",
-								"1990"
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"body": null
-				}
-			]
-		},
-		{
 			"name": "Metas",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer {{accessToken}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"tipo\": \"presupuesto-mensual\",\r\n    \"montoObjetivo\": 6000,\r\n    \"mes\": 3,\r\n    \"año\": 2025\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://{{baseUrl}}:4000/api/metas",
-					"protocol": "http",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"port": "4000",
-					"path": [
-						"api",
-						"metas"
-					]
-				}
-			},
-			"response": [
+			"item": [
 				{
-					"name": "Metas presupuesto mensual",
-					"originalRequest": {
+					"name": "Metas",
+					"request": {
 						"method": "POST",
 						"header": [
 							{
@@ -3418,81 +3203,88 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"body": null
+					"response": [
+						{
+							"name": "Metas presupuesto mensual",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipo\": \"presupuesto-mensual\",\r\n    \"montoObjetivo\": 6000,\r\n    \"mes\": 3,\r\n    \"año\": 2025\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/metas",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"metas"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Metas ahorro",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipo\": \"ahorro\",\r\n    \"montoObjetivo\": 20000,\r\n    \"fechaLimite\": \"2025-03-30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/metas",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"metas"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
 				},
 				{
-					"name": "Metas ahorro",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{accessToken}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"tipo\": \"ahorro\",\r\n    \"montoObjetivo\": 20000,\r\n    \"fechaLimite\": \"2025-03-30\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/metas",
-							"protocol": "http",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"port": "4000",
-							"path": [
-								"api",
-								"metas"
-							]
-						}
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"body": null
-				}
-			]
-		},
-		{
-			"name": "Metas progreso",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer {{accessToken}}",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "http://{{baseUrl}}:4000/api/metas/{{metaId}}/progreso",
-					"protocol": "http",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"port": "4000",
-					"path": [
-						"api",
-						"metas",
-						"{{metaId}}",
-						"progreso"
-					]
-				}
-			},
-			"response": [
-				{
 					"name": "Metas progreso",
-					"originalRequest": {
+					"request": {
 						"method": "GET",
 						"header": [
 							{
@@ -3516,51 +3308,43 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"body": null
-				}
-			]
-		},
-		{
-			"name": "Metas avance",
-			"request": {
-				"method": "PATCH",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer {{accessToken}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"montoActual\": 3500\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"response": [
+						{
+							"name": "Metas progreso",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/metas/{{metaId}}/progreso",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"metas",
+										"{{metaId}}",
+										"progreso"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
 						}
-					}
-				},
-				"url": {
-					"raw": "http://{{baseUrl}}:4000/api/metas/{{metaId}}",
-					"protocol": "http",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"port": "4000",
-					"path": [
-						"api",
-						"metas",
-						"{{metaId}}"
 					]
-				}
-			},
-			"response": [
+				},
 				{
 					"name": "Metas avance",
-					"originalRequest": {
+					"request": {
 						"method": "PATCH",
 						"header": [
 							{
@@ -3571,7 +3355,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"montoObjetivo\": 3500\r\n}",
+							"raw": "{\r\n    \"montoActual\": 3500\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3592,16 +3376,651 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": "",
-					"header": [],
-					"cookie": [
+					"response": [
 						{
-							"expires": "Invalid Date",
-							"domain": "",
-							"path": ""
+							"name": "Metas avance",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"montoObjetivo\": 3500\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/metas/{{metaId}}",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"metas",
+										"{{metaId}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
+							"body": ""
 						}
-					],
-					"body": ""
+					]
+				},
+				{
+					"name": "Metas activas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/metas/usuario/{usuarioId}/activas/count",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"metas",
+								"usuario",
+								"{usuarioId}",
+								"activas",
+								"count"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Metas activas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/metas/usuario/{{usuarioId}}/activas/count",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"metas",
+										"usuario",
+										"{{usuarioId}}",
+										"activas",
+										"count"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Examenes",
+			"item": [
+				{
+					"name": "Preguntas (admin)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tipo\": \"conocimiento\",\r\n  \"tema\": \"ahorro\",\r\n  \"nivel\": \"basico\",\r\n  \"dimension\": \"habitos\",\r\n  \"pregunta\": \"¿Cuál es un buen hábito de ahorro?\",\r\n  \"respuestas\": [\r\n    { \"inciso\": \"a\", \"texto\": \"Ahorrar una parte fija del ingreso\", \"correcta\": true },\r\n    { \"inciso\": \"b\", \"texto\": \"Gastar todo el ingreso\", \"correcta\": false }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/preguntas",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"preguntas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Preguntas (admin)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"tipo\": \"conocimiento\",\r\n  \"tema\": \"ahorro\",\r\n  \"nivel\": \"basico\",\r\n  \"dimension\": \"habitos\",\r\n  \"pregunta\": \"¿Cuál es un buen hábito de ahorro?\",\r\n  \"respuestas\": [\r\n    { \"inciso\": \"a\", \"texto\": \"Ahorrar una parte fija del ingreso\", \"correcta\": true },\r\n    { \"inciso\": \"b\", \"texto\": \"Gastar todo el ingreso\", \"correcta\": false }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/preguntas",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"preguntas"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Preguntas (admin)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/preguntas",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"preguntas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Preguntas (admin)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/preguntas",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"preguntas"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Preguntas (admin) params",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/preguntas?nivel=basico",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"preguntas"
+									],
+									"query": [
+										{
+											"key": "nivel",
+											"value": "basico"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Preguntas export (admin)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/preguntas/export",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"preguntas",
+								"export"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Preguntas export (admin)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/preguntas/export",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"preguntas",
+										"export"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Pregunta by id (admin)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/preguntas/{{preguntaId}}",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"preguntas",
+								"{{preguntaId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Pregunta by id (admin)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/preguntas/{{preguntaId}}",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"preguntas",
+										"{{preguntaId}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Pregunta by id (admin)",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nivel\": \"intermedio\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/preguntas/{{preguntaId}}",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"preguntas",
+								"{{preguntaId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Pregunta by id (admin)",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"nivel\": \"intermedio\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/preguntas/{{preguntaId}}",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"preguntas",
+										"{{preguntaId}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Preguntas sugerencias",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/preguntas/sugerencias?nivel=basico&temas=ahorro,inversion&limit=10",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"preguntas",
+								"sugerencias"
+							],
+							"query": [
+								{
+									"key": "nivel",
+									"value": "basico"
+								},
+								{
+									"key": "temas",
+									"value": "ahorro,inversion"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Preguntas sugerencias",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/preguntas/sugerencias?nivel=basico&temas=ahorro,inversion&limit=10",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"preguntas",
+										"sugerencias"
+									],
+									"query": [
+										{
+											"key": "nivel",
+											"value": "basico"
+										},
+										{
+											"key": "temas",
+											"value": "ahorro,inversion"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Examen",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tipo\": \"conocimiento\",\r\n  \"tema\": \"ahorro\",\r\n  \"nivel\": \"basico\",\r\n  \"usuarioID\": \"{{usuarioId}}\",\r\n  \"preguntas\":[\r\n    { \"preguntaID\": \"{{preguntaId}}\", \"respuestaSeleccionada\": \"c\" }\r\n  ],\r\n  \"puntuacionMinimaRequerida\": 60\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/examenes",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"examenes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Examen",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"tipo\": \"conocimiento\",\r\n  \"tema\": \"ahorro\",\r\n  \"nivel\": \"basico\",\r\n  \"usuarioID\": \"{{usuarioId}}\",\r\n  \"preguntas\":[\r\n    { \"preguntaID\": \"{{preguntaId}}\", \"respuestaSeleccionada\": \"c\" }\r\n  ],\r\n  \"puntuacionMinimaRequerida\": 60\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/examenes",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"examenes"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
+							"body": ""
+						}
+					]
 				}
 			]
 		}
@@ -3667,6 +4086,10 @@
 		},
 		{
 			"key": "metaId",
+			"value": ""
+		},
+		{
+			"key": "preguntaId",
 			"value": ""
 		}
 	]
