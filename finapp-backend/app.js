@@ -13,6 +13,7 @@ import analyticsRoutes from "./routes/analytics.routes.js";
 import metasRoutes from "./routes/metas.routes.js";
 import preguntasRoutes from "./routes/preguntas.routes.js";
 import examenesRoutes from "./routes/examenes.routes.js";
+import simulatorsRoutes from "./routes/simulators.routes.js";
 import swaggerUi from "swagger-ui-express";
 import fs from "fs";
 import path from "path";
@@ -38,6 +39,7 @@ app.use("/api/analytics", analyticsRoutes);
 app.use("/api/metas", metasRoutes);
 app.use("/api/preguntas", preguntasRoutes);
 app.use("/api/examenes", examenesRoutes);
+app.use("/api/simulators", simulatorsRoutes);
 
 // Swagger UI
 try {

@@ -4021,6 +4021,738 @@
 							"body": ""
 						}
 					]
+				},
+				{
+					"name": "Generar Examen",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminAccessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/examenes/generar?nivel=basico&temas=ahorro,inversion&limite=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"examenes",
+								"generar"
+							],
+							"query": [
+								{
+									"key": "nivel",
+									"value": "basico"
+								},
+								{
+									"key": "temas",
+									"value": "ahorro,inversion"
+								},
+								{
+									"key": "limite",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Generar Examen",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{adminAccessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:4000/api/examenes/generar?nivel=basico&temas=ahorro,inversion&limite=5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"examenes",
+										"generar"
+									],
+									"query": [
+										{
+											"key": "nivel",
+											"value": "basico"
+										},
+										{
+											"key": "temas",
+											"value": "ahorro,inversion"
+										},
+										{
+											"key": "limite",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Simuladores",
+			"item": [
+				{
+					"name": "Simulacion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/simulators{{simulador}}/entries",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"simulators{{simulador}}",
+								"entries"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Simulacion savings",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipo\": \"usuario\",\r\n    \"input\": {\r\n        \"goalAmount\": 50000,\r\n        \"months\": 12,\r\n        \"initialAmount\": 0,\r\n        \"annualRate\": 5\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/savings/entries",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"savings",
+										"entries"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Simulacion compound",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipo\": \"usuario\",\r\n    \"input\": {\r\n        \"initialCapital\": 10000,\r\n        \"monthlyDeposit\": 1000,\r\n        \"annualRate\": 8,\r\n        \"years\": 5,\r\n        \"frequency\": 12\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/compound/entries",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"compound",
+										"entries"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Simulacion bonds",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipo\": \"usuario\",\r\n    \"input\": {\r\n        \"purchasePrice\": 9850,\r\n        \"nominalValue\": 10000,\r\n        \"daysToMaturity\": 28\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/bonds/entries",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"bonds",
+										"entries"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
+							"body": ""
+						},
+						{
+							"name": "Simulacion credit-card",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipo\": \"usuario\",\r\n    \"input\": {\r\n        \"balance\": 15000,\r\n        \"annualRate\": 45,\r\n        \"minimumPayment\": 300,\r\n        \"fixedPayment\": 2000\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/credit-card/entries",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"credit-card",
+										"entries"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Simulacion loan",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipo\": \"usuario\",\r\n    \"input\": {\r\n        \"loanAmount\": 50000,\r\n        \"months\": 24,\r\n        \"annualRate\": 18,\r\n        \"openingFee\": 1500\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/loan/entries",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"loan",
+										"entries"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Simulacion debt-payoff",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipo\": \"nube\",\r\n    \"input\": {\r\n        \"monthlyBudget\": 5000,\r\n        \"debts\": [\r\n            {\r\n                \"name\": \"Tarjeta A\",\r\n                \"balance\": 15000,\r\n                \"rate\": 45,\r\n                \"minPayment\": 300\r\n            }\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/debt-payoff/entries",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"debt-payoff",
+										"entries"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Simulacion nube",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipo\": \"nube\",\r\n    \"input\": {\r\n        \"purchasePrice\": 9850,\r\n        \"nominalValue\": 10000,\r\n        \"daysToMaturity\": 28\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/bonds/entries",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"bonds",
+										"entries"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Simulaciones",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminAccessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{baseUrl}}:4000/api/simulators/{{simulador}}/entries?scope=all|user|cloud&page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"simulators",
+								"{{simulador}}",
+								"entries"
+							],
+							"query": [
+								{
+									"key": "scope",
+									"value": "all|user|cloud"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Simulaciones all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{adminAccessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/{{simulador}}/entries?scope=all&page=1&limit=20",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"{{simulador}}",
+										"entries"
+									],
+									"query": [
+										{
+											"key": "scope",
+											"value": "all"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Simulaciones usuario",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{adminAccessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/{{simulador}}/entries?scope=user&page=1&limit=20",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"{{simulador}}",
+										"entries"
+									],
+									"query": [
+										{
+											"key": "scope",
+											"value": "user"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Simulaciones nube",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{adminAccessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:4000/api/simulators/{{simulador}}/entries?scope=cloud&page=1&limit=20",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"{{simulador}}",
+										"entries"
+									],
+									"query": [
+										{
+											"key": "scope",
+											"value": "cloud"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Simulacion by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminAccessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/simulators/{{simulador}}/entries/{{simulacionId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"simulators",
+								"{{simulador}}",
+								"entries",
+								"{{simulacionId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Simulacion by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{adminAccessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:4000/api/simulators/{{simulador}}/entries/{{simulacionId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"{{simulador}}",
+										"entries",
+										"{{simulacionId}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Simulacion",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminAccessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/simulators/{{simulador}}/entries/{{simulacionId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"simulators",
+								"{{simulador}}",
+								"entries",
+								"{{simulacionId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Simulacion",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{adminAccessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:4000/api/simulators/{{simulador}}/entries/{{simulacionId}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"simulators",
+										"{{simulador}}",
+										"entries",
+										"{{simulacionId}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
 				}
 			]
 		}
@@ -4090,6 +4822,14 @@
 		},
 		{
 			"key": "preguntaId",
+			"value": ""
+		},
+		{
+			"key": "simulador",
+			"value": ""
+		},
+		{
+			"key": "simulacionId",
 			"value": ""
 		}
 	]
