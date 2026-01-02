@@ -18,10 +18,12 @@ function calcularPuntuacion(preguntas, respuestasSeleccionadas) {
 }
 
 export const generarExamen = asyncHandler(async (req, res) => {
-  const { nivel = 'basico', temas = 'ahorro,inversion,credito', limite = 10 } = req.query;
+  const { tipo, nivel = 'basico', temas = 'ahorro,inversion,credito', limite = 10 } = req.query;
   const temasArr = String(temas).split(',').map(t => t.trim()).filter(Boolean);
+  const match = { nivel, tema: { $in: temasArr }, estado: 'activa' };
+  if (tipo) match.tipo = tipo;
   const preguntas = await Pregunta.aggregate([
-    { $match: { nivel, tema: { $in: temasArr }, estado: 'activa' } },
+    { $match: match },
     { $sample: { size: Number(limite) } }
   ]);
   res.json({ preguntas });
