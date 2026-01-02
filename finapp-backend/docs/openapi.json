@@ -6,7 +6,7 @@
     "description": "API de analytics y metas. Autenticación via Bearer JWT."
   },
   "servers": [
-    { "url": "http://localhost:3000" }
+    { "url": "http://localhost:4000" }
   ],
   "components": {
     "securitySchemes": {
@@ -102,6 +102,26 @@
           "porcentaje": { "type": "number" },
           "diasRestantes": { "type": ["integer","null"] }
         }
+      },
+      "SimulatorEntry": {
+        "type": "object",
+        "properties": {
+          "_id": { "type": "string" },
+          "simulador": { "type": "string", "enum": ["savings","compound","bonds","credit-card","loan","debt-payoff"] },
+          "tipo": { "type": "string", "enum": ["usuario","nube"] },
+          "usuarioID": { "type": ["string","null"] },
+          "creadoPor": { "type": "string" },
+          "input": { "type": "object", "additionalProperties": true },
+          "createdAt": { "type": "string", "format": "date-time" }
+        }
+      },
+      "CreateSimulatorEntryRequest": {
+        "type": "object",
+        "required": ["tipo","input"],
+        "properties": {
+          "tipo": { "type": "string", "enum": ["usuario","nube"] },
+          "input": { "type": "object", "additionalProperties": true }
+        }
       }
     }
   },
@@ -144,8 +164,61 @@
       "put": {"tags":["usuarios"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object"}}}}, "responses": {"200": {"description":"OK"}, "404": {"description":"No encontrado"}}, "security": [{"BearerAuth":[]} ]},
       "delete": {"tags":["usuarios"], "parameters": [{"name":"id","in":"path","required":true,"schema":{"type":"string"}}], "responses": {"204": {"description":"Eliminado"}, "404": {"description":"No encontrado"}}, "security": [{"BearerAuth":[]} ]}
     },
+    "/api/usuarios/{id}/preferences/notifications": {
+      "get": {
+        "tags": ["usuarios"],
+        "parameters": [ {"name":"id","in":"path","required":true,"schema":{"type":"string"}} ],
+        "responses": {
+          "200": { "description": "OK", "content": {"application/json": {"schema": {"type":"object","properties": {"notificaciones": {"type":"boolean"}, "notifyWeeklyTips": {"type":"boolean"}, "notifyBudgetAlerts": {"type":"boolean"}, "notifyGoalReminders": {"type":"boolean"}}}}}},
+          "404": { "description": "No encontrado" }
+        },
+        "security": [{"BearerAuth": []}]
+      },
+      "patch": {
+        "tags": ["usuarios"],
+        "parameters": [ {"name":"id","in":"path","required":true,"schema":{"type":"string"}} ],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type":"object","properties": {"notificaciones": {"type":"boolean"}, "notifyWeeklyTips": {"type":"boolean"}, "notifyBudgetAlerts": {"type":"boolean"}, "notifyGoalReminders": {"type":"boolean"}}, "minProperties": 1 }}}},
+        "responses": {
+          "200": { "description": "OK", "content": {"application/json": {"schema": {"type":"object","properties": {"notificaciones": {"type":"boolean"}, "notifyWeeklyTips": {"type":"boolean"}, "notifyBudgetAlerts": {"type":"boolean"}, "notifyGoalReminders": {"type":"boolean"}}}}}},
+          "404": { "description": "No encontrado" }
+        },
+        "security": [{"BearerAuth": []}]
+      }
+    },
     "/api/transacciones": {
       "post": {"tags":["transacciones"], "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["usuarioId","tipo","monto","fecha"], "properties": {"usuarioId": {"type":"string"}, "tipo": {"type":"string","enum":["ingreso","egreso"]}, "monto": {"type":"number"}, "fecha": {"type":"string","format":"date-time"}, "categoriaId": {"type":"string"}, "etiquetas": {"type":"array","items":{"type":"string"}}}}}}}, "responses": {"201": {"description":"Creada"}}, "security": [{"BearerAuth":[]} ]}
+    },
+    "/api/transacciones/bulk": {
+      "post": {
+        "tags": ["transacciones"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": ["usuarioId","tipo","monto","fecha"],
+                  "properties": {
+                    "usuarioId": {"type":"string"},
+                    "tipo": {"type":"string","enum":["ingreso","egreso"]},
+                    "monto": {"type":"number"},
+                    "fecha": {"type":"string","format":"date-time"},
+                    "categoriaId": {"type":"string"},
+                    "etiquetas": {"type":"array","items":{"type":"string"}}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {"description":"Creadas","content":{"application/json":{"schema":{"type":"object","properties":{"inserted":{"type":"integer"},"data":{"type":"array","items":{"type":"object"}}}}}}}
+        },
+        "security": [{"BearerAuth":[]} ]
+      }
     },
     "/api/transacciones/usuario/{usuarioId}": {
       "get": {"tags":["transacciones"], "parameters": [{"name":"usuarioId","in":"path","required":true,"schema":{"type":"string"}}, {"name":"page","in":"query","schema":{"type":"integer","default":1}}, {"name":"limit","in":"query","schema":{"type":"integer","default":20}}, {"name":"from","in":"query","schema":{"type":"string","format":"date-time"}}, {"name":"to","in":"query","schema":{"type":"string","format":"date-time"}}, {"name":"categoriaId","in":"query","schema":{"type":"string"}}, {"name":"tipo","in":"query","schema":{"type":"string","enum":["ingreso","egreso"]}}], "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"array","items":{"type":"object"}},"meta":{"type":"object"}}}}}}}, "security": [{"BearerAuth":[]} ]}
@@ -315,6 +388,48 @@
         "tags": ["metas"],
         "parameters": [ {"name":"id","in":"path","required":true,"schema":{"type":"string"}} ],
         "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"$ref":"#/components/schemas/ProgresoMeta"}}}},"404":{"description":"No encontrada"}}
+      }
+    },
+    "/api/simulators/{simulador}/entries": {
+      "post": {
+        "tags": ["simulators"],
+        "parameters": [
+          {"name":"simulador","in":"path","required":true,"schema":{"type":"string","enum":["savings","compound","bonds","credit-card","loan","debt-payoff"]}}
+        ],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/CreateSimulatorEntryRequest"}}}},
+        "responses": {"201": {"description":"Creada","content":{"application/json":{"schema":{"$ref":"#/components/schemas/SimulatorEntry"}}}}},
+        "security": [{"BearerAuth": []}]
+      },
+      "get": {
+        "tags": ["simulators"],
+        "parameters": [
+          {"name":"simulador","in":"path","required":true,"schema":{"type":"string","enum":["savings","compound","bonds","credit-card","loan","debt-payoff"]}},
+          {"name":"scope","in":"query","schema":{"type":"string","enum":["all","user","cloud"],"default":"all"}},
+          {"name":"page","in":"query","schema":{"type":"integer","default":1}},
+          {"name":"limit","in":"query","schema":{"type":"integer","default":20}}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"array","items":{"$ref":"#/components/schemas/SimulatorEntry"}},"meta":{"type":"object"}}}}}}},
+        "security": [{"BearerAuth": []}]
+      }
+    },
+    "/api/simulators/{simulador}/entries/{id}": {
+      "get": {
+        "tags": ["simulators"],
+        "parameters": [
+          {"name":"simulador","in":"path","required":true,"schema":{"type":"string","enum":["savings","compound","bonds","credit-card","loan","debt-payoff"]}},
+          {"name":"id","in":"path","required":true,"schema":{"type":"string"}}
+        ],
+        "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"$ref":"#/components/schemas/SimulatorEntry"}}}},"404":{"description":"No encontrada"}},
+        "security": [{"BearerAuth": []}]
+      },
+      "delete": {
+        "tags": ["simulators"],
+        "parameters": [
+          {"name":"simulador","in":"path","required":true,"schema":{"type":"string","enum":["savings","compound","bonds","credit-card","loan","debt-payoff"]}},
+          {"name":"id","in":"path","required":true,"schema":{"type":"string"}}
+        ],
+        "responses": {"204": {"description":"Eliminada"},"404":{"description":"No encontrada"}},
+        "security": [{"BearerAuth": []}]
       }
     }
   }

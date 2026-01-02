@@ -6,6 +6,20 @@ export const crearTransaccion = asyncHandler(async (req, res) => {
   res.status(201).json(tx);
 });
 
+export const crearTransaccionesBulk = asyncHandler(async (req, res) => {
+  const items = req.body; // arreglo validado por Joi
+  // Ownership: si no es admin, todas deben pertenecer al usuario autenticado
+  if (req.user.rol !== 'administrador') {
+    const invalid = items.find(t => t.usuarioId !== req.user.id);
+    if (invalid) {
+      return res.status(403).json({ message: 'No autorizado: todas las transacciones deben pertenecer al usuario autenticado' });
+    }
+  }
+  // Inserción masiva
+  const creadas = await Transaccion.insertMany(items, { ordered: true });
+  res.status(201).json({ inserted: creadas.length, data: creadas });
+});
+
 export const listarPorUsuario = asyncHandler(async (req, res) => {
   const { usuarioId } = req.params;
   const { page = 1, limit = 20, from, to, categoriaId, tipo } = req.query;

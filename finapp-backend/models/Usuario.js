@@ -16,6 +16,9 @@ const usuarioSchema = new mongoose.Schema({
     preferencias: {
         temasFavoritos: [String],
         notificaciones: { type: Boolean, default: true },
+        notifyWeeklyTips: { type: Boolean, default: true },
+        notifyBudgetAlerts: { type: Boolean, default: true },
+        notifyGoalReminders: { type: Boolean, default: true },
     },
     tokenActualizacion: String,
 });

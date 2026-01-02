@@ -1,4 +1,4 @@
-{
+﻿{
 	"info": {
 		"_postman_id": "3471875e-99fb-494e-b55f-1cffdd5bcace",
 		"name": "New Collection",
@@ -15,12 +15,12 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/auth/register",
+							"raw": "http://{{baseUrl}}:{{port}}/api/auth/register",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"auth",
@@ -50,12 +50,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/auth/register",
+									"raw": "http://{{baseUrl}}:{{port}}/api/auth/register",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"auth",
@@ -95,12 +95,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/auth/register",
+									"raw": "http://{{baseUrl}}:{{port}}/api/auth/register",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"auth",
@@ -121,12 +121,12 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/auth/login",
+							"raw": "http://{{baseUrl}}:{{port}}/api/auth/login",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"auth",
@@ -156,12 +156,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/auth/login",
+									"raw": "http://{{baseUrl}}:{{port}}/api/auth/login",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"auth",
@@ -175,7 +175,7 @@
 							"body": null
 						},
 						{
-							"name": "Login contraseña incorrecta",
+							"name": "Login contraseÃ±a incorrecta",
 							"originalRequest": {
 								"method": "POST",
 								"header": [
@@ -195,12 +195,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/auth/login",
+									"raw": "http://{{baseUrl}}:{{port}}/api/auth/login",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"auth",
@@ -234,12 +234,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/auth/login",
+									"raw": "http://{{baseUrl}}:{{port}}/api/auth/login",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"auth",
@@ -260,12 +260,12 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/auth/refresh",
+							"raw": "http://{{baseUrl}}:{{port}}/api/auth/refresh",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"auth",
@@ -295,12 +295,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/auth/refresh",
+									"raw": "http://{{baseUrl}}:{{port}}/api/auth/refresh",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"auth",
@@ -340,12 +340,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/auth/refresh",
+									"raw": "http://{{baseUrl}}:{{port}}/api/auth/refresh",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"auth",
@@ -379,12 +379,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/auth/refresh",
+									"raw": "http://{{baseUrl}}:{{port}}/api/auth/refresh",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"auth",
@@ -414,12 +414,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/auth/logout",
+							"raw": "http://{{baseUrl}}:{{port}}/api/auth/logout",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"auth",
@@ -443,12 +443,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/auth/logout",
+									"raw": "http://{{baseUrl}}:{{port}}/api/auth/logout",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"auth",
@@ -480,12 +480,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/usuarios",
+							"raw": "http://{{baseUrl}}:{{port}}/api/usuarios",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"usuarios"
@@ -505,12 +505,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/usuarios",
+									"raw": "http://{{baseUrl}}:{{port}}/api/usuarios",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"usuarios"
@@ -534,12 +534,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/usuarios",
+									"raw": "http://{{baseUrl}}:{{port}}/api/usuarios",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"usuarios"
@@ -574,12 +574,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/usuarios?Authorization=Bearer {{accessToken}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/usuarios?Authorization=Bearer {{accessToken}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"usuarios"
@@ -619,12 +619,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/usuarios?Authorization=Bearer {{adminAccessToken}}&=",
+									"raw": "http://{{baseUrl}}:{{port}}/api/usuarios?Authorization=Bearer {{adminAccessToken}}&=",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"usuarios"
@@ -660,12 +660,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/usuarios/{{usuarioId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"usuarios",
@@ -686,12 +686,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/usuarios/{{usuarioId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"usuarios",
@@ -716,12 +716,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/usuarios/691c2fb2a32104a5350399b3",
+									"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/691c2fb2a32104a5350399b3",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"usuarios",
@@ -757,12 +757,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/usuarios/{{usuarioId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"usuarios",
@@ -792,12 +792,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/usuarios/{{usuarioId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"usuarios",
@@ -828,12 +828,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/usuarios/{{usuarioId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"usuarios",
@@ -858,16 +858,158 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/usuarios/{{usuarioId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"usuarios",
 										"{{usuarioId}}"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Notificaciones",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminAccessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}/preferences/notifications",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"usuarios",
+								"{{usuarioId}}",
+								"preferences",
+								"notifications"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Notificaciones",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{adminAccessToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}/preferences/notifications",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"usuarios",
+										"{{usuarioId}}",
+										"preferences",
+										"notifications"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Notificaciones",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminAccessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"notifyWeeklyTips\": false,\r\n    \"notifyBudgetAlerts\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}/preferences/notifications",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"usuarios",
+								"{{usuarioId}}",
+								"preferences",
+								"notifications"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Notificaciones",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{adminAccessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"notifyWeeklyTips\": false,\r\n    \"notifyBudgetAlerts\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{baseUrl}}:{{port}}/api/usuarios/{{usuarioId}}/preferences/notifications",
+									"protocol": "http",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"usuarios",
+										"{{usuarioId}}",
+										"preferences",
+										"notifications"
 									]
 								}
 							},
@@ -896,7 +1038,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"titulo\": \"Interés compuesto\",\r\n    \"cuerpo\": \"Explicación breve...\",\r\n    \"tipo\": \"capsula\",\r\n    \"nivel\": \"básico\",\r\n    \"quiz\": {\r\n        \"preguntas\": [\r\n            {\r\n                \"enunciado\": \"¿Qué es interés compuesto?\",\r\n                \"opciones\": [\r\n                    {\r\n                        \"texto\": \"Interés solo sobre capital inicial\",\r\n                        \"correcta\": false\r\n                    },\r\n                    {\r\n                        \"texto\": \"Interés sobre capital + intereses previos\",\r\n                        \"correcta\": true\r\n                    }\r\n                ],\r\n                \"explicacionCorrecta\": \"Se reinvierten los intereses.\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"raw": "{\r\n    \"titulo\": \"InterÃ©s compuesto\",\r\n    \"cuerpo\": \"ExplicaciÃ³n breve...\",\r\n    \"tipo\": \"capsula\",\r\n    \"nivel\": \"bÃ¡sico\",\r\n    \"quiz\": {\r\n        \"preguntas\": [\r\n            {\r\n                \"enunciado\": \"Â¿QuÃ© es interÃ©s compuesto?\",\r\n                \"opciones\": [\r\n                    {\r\n                        \"texto\": \"InterÃ©s solo sobre capital inicial\",\r\n                        \"correcta\": false\r\n                    },\r\n                    {\r\n                        \"texto\": \"InterÃ©s sobre capital + intereses previos\",\r\n                        \"correcta\": true\r\n                    }\r\n                ],\r\n                \"explicacionCorrecta\": \"Se reinvierten los intereses.\"\r\n            }\r\n        ]\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -904,12 +1046,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/admin/content",
+							"raw": "http://{{baseUrl}}:{{port}}/api/admin/content",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"admin",
@@ -931,7 +1073,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"titulo\": \"Interés compuesto\",\r\n    \"cuerpo\": \"Explicación breve...\",\r\n    \"tipo\": \"capsula\",\r\n    \"nivel\": \"básico\",\r\n    \"quiz\": {\r\n        \"preguntas\": [\r\n            {\r\n                \"enunciado\": \"¿Qué es interés compuesto?\",\r\n                \"opciones\": [\r\n                    {\r\n                        \"texto\": \"Interés solo sobre capital inicial\",\r\n                        \"correcta\": false\r\n                    },\r\n                    {\r\n                        \"texto\": \"Interés sobre capital + intereses previos\",\r\n                        \"correcta\": true\r\n                    }\r\n                ],\r\n                \"explicacionCorrecta\": \"Se reinvierten los intereses.\"\r\n            }\r\n        ]\r\n    }\r\n}",
+									"raw": "{\r\n    \"titulo\": \"InterÃ©s compuesto\",\r\n    \"cuerpo\": \"ExplicaciÃ³n breve...\",\r\n    \"tipo\": \"capsula\",\r\n    \"nivel\": \"bÃ¡sico\",\r\n    \"quiz\": {\r\n        \"preguntas\": [\r\n            {\r\n                \"enunciado\": \"Â¿QuÃ© es interÃ©s compuesto?\",\r\n                \"opciones\": [\r\n                    {\r\n                        \"texto\": \"InterÃ©s solo sobre capital inicial\",\r\n                        \"correcta\": false\r\n                    },\r\n                    {\r\n                        \"texto\": \"InterÃ©s sobre capital + intereses previos\",\r\n                        \"correcta\": true\r\n                    }\r\n                ],\r\n                \"explicacionCorrecta\": \"Se reinvierten los intereses.\"\r\n            }\r\n        ]\r\n    }\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -939,12 +1081,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/admin/content",
+									"raw": "http://{{baseUrl}}:{{port}}/api/admin/content",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"admin",
@@ -975,15 +1117,15 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\"titulo\":\"Introducción al ahorro\",\r\n\"cuerpo\":\"Ahorra el 10%\",\r\n\"categoria\":\"finanzas\",\r\n\"nivel\":\"básico\"\r\n}"
+							"raw": "{\r\n\"titulo\":\"IntroducciÃ³n al ahorro\",\r\n\"cuerpo\":\"Ahorra el 10%\",\r\n\"categoria\":\"finanzas\",\r\n\"nivel\":\"bÃ¡sico\"\r\n}"
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/education/capsules/{{contenidoId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/education/capsules/{{contenidoId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"education",
@@ -1006,15 +1148,15 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"titulo\":\"Introducción al ahorro\",\r\n\"cuerpo\":\"Ahorra el 10%\",\r\n\"categoria\":\"finanzas\",\r\n\"nivel\":\"básico\"\r\n}"
+									"raw": "{\r\n\"titulo\":\"IntroducciÃ³n al ahorro\",\r\n\"cuerpo\":\"Ahorra el 10%\",\r\n\"categoria\":\"finanzas\",\r\n\"nivel\":\"bÃ¡sico\"\r\n}"
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/education/capsules/{{contenidoId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/education/capsules/{{contenidoId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"education",
@@ -1041,15 +1183,15 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"titulo\":\"Introducción al ahorro\",\r\n\"cuerpo\":\"Ahorra el 10%\",\r\n\"categoria\":\"finanzas\",\r\n\"nivel\":\"básico\"\r\n}"
+									"raw": "{\r\n\"titulo\":\"IntroducciÃ³n al ahorro\",\r\n\"cuerpo\":\"Ahorra el 10%\",\r\n\"categoria\":\"finanzas\",\r\n\"nivel\":\"bÃ¡sico\"\r\n}"
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/education/capsules/591d7a79df9c0be4edd06f5c",
+									"raw": "http://{{baseUrl}}:{{port}}/api/education/capsules/591d7a79df9c0be4edd06f5c",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"education",
@@ -1086,12 +1228,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/admin/content/{{contenidoId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/admin/content/{{contenidoId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"admin",
@@ -1127,12 +1269,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/admin/content/{{contenidoId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/admin/content/{{contenidoId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"admin",
@@ -1173,12 +1315,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/admin/content/{{contenidoId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/admin/content/{{contenidoId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"admin",
@@ -1215,12 +1357,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/admin/content/{{contenidoId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/admin/content/{{contenidoId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"admin",
@@ -1251,12 +1393,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/admin/content/{{contenidoId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/admin/content/{{contenidoId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"admin",
@@ -1291,12 +1433,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/admin/content/{{contenidoId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/admin/content/{{contenidoId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"admin",
@@ -1330,12 +1472,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/education/search?text=interes&page=1&limit=10",
+							"raw": "http://{{baseUrl}}:{{port}}/api/education/search?text=interes&page=1&limit=10",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"education",
@@ -1370,12 +1512,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/education/search?text=compuesto&page=1&limit=10",
+									"raw": "http://{{baseUrl}}:{{port}}/api/education/search?text=compuesto&page=1&limit=10",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"education",
@@ -1420,12 +1562,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/education/search?nivel=básico&page=1&limit=10",
+									"raw": "http://{{baseUrl}}:{{port}}/api/education/search?nivel=bÃ¡sico&page=1&limit=10",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"education",
@@ -1434,7 +1576,7 @@
 									"query": [
 										{
 											"key": "nivel",
-											"value": "básico"
+											"value": "bÃ¡sico"
 										},
 										{
 											"key": "page",
@@ -1466,12 +1608,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/education/{{contenidoId}}/like?tipo=like",
+							"raw": "http://{{baseUrl}}:{{port}}/api/education/{{contenidoId}}/like?tipo=like",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"education",
@@ -1499,12 +1641,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/education/{{contenidoId}}/like?tipo=like",
+									"raw": "http://{{baseUrl}}:{{port}}/api/education/{{contenidoId}}/like?tipo=like",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"education",
@@ -1536,12 +1678,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/education/{{contenidoId}}/like?tipo=dislike",
+									"raw": "http://{{baseUrl}}:{{port}}/api/education/{{contenidoId}}/like?tipo=dislike",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"education",
@@ -1579,15 +1721,15 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"titulo\": \"Interés compuesto\",\r\n    \"cuerpo\": \"Explicación breve...\",\r\n    \"tipo\": \"capsula\",\r\n    \"nivel\": \"básico\",\r\n    \"quiz\": {\r\n        \"preguntas\": [\r\n            {\r\n                \"enunciado\": \"¿Qué es interés compuesto?\",\r\n                \"opciones\": [\r\n                    {\r\n                        \"texto\": \"Interés solo sobre capital inicial\",\r\n                        \"correcta\": false\r\n                    },\r\n                    {\r\n                        \"texto\": \"Interés sobre capital + intereses previos\",\r\n                        \"correcta\": true\r\n                    }\r\n                ],\r\n                \"explicacionCorrecta\": \"Se reinvierten los intereses.\"\r\n            }\r\n        ]\r\n    }\r\n}"
+							"raw": "{\r\n    \"titulo\": \"InterÃ©s compuesto\",\r\n    \"cuerpo\": \"ExplicaciÃ³n breve...\",\r\n    \"tipo\": \"capsula\",\r\n    \"nivel\": \"bÃ¡sico\",\r\n    \"quiz\": {\r\n        \"preguntas\": [\r\n            {\r\n                \"enunciado\": \"Â¿QuÃ© es interÃ©s compuesto?\",\r\n                \"opciones\": [\r\n                    {\r\n                        \"texto\": \"InterÃ©s solo sobre capital inicial\",\r\n                        \"correcta\": false\r\n                    },\r\n                    {\r\n                        \"texto\": \"InterÃ©s sobre capital + intereses previos\",\r\n                        \"correcta\": true\r\n                    }\r\n                ],\r\n                \"explicacionCorrecta\": \"Se reinvierten los intereses.\"\r\n            }\r\n        ]\r\n    }\r\n}"
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/education/capsules?page=1&limit=5",
+							"raw": "http://{{baseUrl}}:{{port}}/api/education/capsules?page=1&limit=5",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"education",
@@ -1619,15 +1761,15 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"titulo\": \"Interés compuesto\",\r\n    \"cuerpo\": \"Explicación breve...\",\r\n    \"tipo\": \"capsula\",\r\n    \"nivel\": \"básico\",\r\n    \"quiz\": {\r\n        \"preguntas\": [\r\n            {\r\n                \"enunciado\": \"¿Qué es interés compuesto?\",\r\n                \"opciones\": [\r\n                    {\r\n                        \"texto\": \"Interés solo sobre capital inicial\",\r\n                        \"correcta\": false\r\n                    },\r\n                    {\r\n                        \"texto\": \"Interés sobre capital + intereses previos\",\r\n                        \"correcta\": true\r\n                    }\r\n                ],\r\n                \"explicacionCorrecta\": \"Se reinvierten los intereses.\"\r\n            }\r\n        ]\r\n    }\r\n}"
+									"raw": "{\r\n    \"titulo\": \"InterÃ©s compuesto\",\r\n    \"cuerpo\": \"ExplicaciÃ³n breve...\",\r\n    \"tipo\": \"capsula\",\r\n    \"nivel\": \"bÃ¡sico\",\r\n    \"quiz\": {\r\n        \"preguntas\": [\r\n            {\r\n                \"enunciado\": \"Â¿QuÃ© es interÃ©s compuesto?\",\r\n                \"opciones\": [\r\n                    {\r\n                        \"texto\": \"InterÃ©s solo sobre capital inicial\",\r\n                        \"correcta\": false\r\n                    },\r\n                    {\r\n                        \"texto\": \"InterÃ©s sobre capital + intereses previos\",\r\n                        \"correcta\": true\r\n                    }\r\n                ],\r\n                \"explicacionCorrecta\": \"Se reinvierten los intereses.\"\r\n            }\r\n        ]\r\n    }\r\n}"
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/education/capsules?page=1&limit=2",
+									"raw": "http://{{baseUrl}}:{{port}}/api/education/capsules?page=1&limit=2",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"education",
@@ -1684,12 +1826,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/transacciones",
+							"raw": "http://{{baseUrl}}:{{port}}/api/transacciones",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"transacciones"
@@ -1710,7 +1852,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n    \"tipo\": \"egreso\",\r\n    \"monto\": 1000,\r\n    \"fecha\": \"2025-12-22T00:00:00.000Z\",\r\n    \"etiquetas\": [\"ahorro\"],\r\n    \"categoriaId\": \"694a5784bb54698ab8e3ee9b\"\r\n}",
+									"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n    \"tipo\": \"ingreso\",\r\n    \"monto\": 1500,\r\n    \"fecha\": \"2025-11-09T00:00:00.000Z\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1718,12 +1860,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones"
@@ -1756,12 +1898,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones"
@@ -1787,12 +1929,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/usuario/{{usuarioId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"transacciones",
@@ -1814,12 +1956,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/usuario/{{usuarioId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -1845,12 +1987,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}?page=1&limit=10",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/usuario/{{usuarioId}}?page=1&limit=10",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -1886,12 +2028,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}?from=2025-11-01&to=2025-11-20",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/usuario/{{usuarioId}}?from=2025-11-01&to=2025-11-20",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -1932,12 +2074,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}?tipo=ingreso",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/usuario/{{usuarioId}}?tipo=ingreso",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -1969,12 +2111,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}?from=2025-12-01&to=2025-11-01",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/usuario/{{usuarioId}}?from=2025-12-01&to=2025-11-01",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -2012,12 +2154,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/transacciones/{{transaccionId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/{{transaccionId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"transacciones",
@@ -2038,12 +2180,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/{{transaccionId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/{{transaccionId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -2074,12 +2216,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/691ecbb43ce87b5a0c11cc80",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/691ecbb43ce87b5a0c11cc80",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -2115,12 +2257,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/transacciones/{{transaccionId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/{{transaccionId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"transacciones",
@@ -2150,12 +2292,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/{{transaccionId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/{{transaccionId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -2182,12 +2324,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/transacciones/{{transaccionId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/{{transaccionId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"transacciones",
@@ -2208,12 +2350,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/{{transaccionId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/{{transaccionId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -2240,12 +2382,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}/count",
+							"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/usuario/{{usuarioId}}/count",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"transacciones",
@@ -2268,12 +2410,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/transacciones/usuario/{{usuarioId}}/count",
+									"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/usuario/{{usuarioId}}/count",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"transacciones",
@@ -2289,6 +2431,42 @@
 							"body": null
 						}
 					]
+				},
+				{
+					"name": "Transacciones arreglo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"ingreso\", \"monto\": 1500, \"fecha\": \"2025-12-09T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"ingreso\", \"monto\": 1500, \"fecha\": \"2025-12-23T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-11T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-13T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-17T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-19T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-27T10:00:00.000Z\" }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{baseUrl}}:{{port}}/api/transacciones/bulk",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"transacciones",
+								"bulk"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -2316,12 +2494,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/recommendations/generar",
+							"raw": "http://{{baseUrl}}:{{port}}/api/recommendations/generar",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"recommendations",
@@ -2343,7 +2521,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n    \"area\": \"inversion\"\r\n}",
+									"raw": "{\r\n    \"usuarioId\": \"{{usuarioId}}\",\r\n    \"area\": \"credito\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2351,12 +2529,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/recommendations/generar",
+									"raw": "http://{{baseUrl}}:{{port}}/api/recommendations/generar",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"recommendations",
@@ -2396,12 +2574,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/recommendations/generar",
+									"raw": "http://{{baseUrl}}:{{port}}/api/recommendations/generar",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"recommendations",
@@ -2428,12 +2606,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/recommendations/{{usuarioId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/recommendations/{{usuarioId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"recommendations",
@@ -2454,12 +2632,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/recommendations/{{usuarioId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/recommendations/{{usuarioId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"recommendations",
@@ -2491,12 +2669,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/admin/analytics/dashboard",
+							"raw": "http://{{baseUrl}}:{{port}}/api/admin/analytics/dashboard",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"admin",
@@ -2518,12 +2696,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/admin/analytics/dashboard",
+									"raw": "http://{{baseUrl}}:{{port}}/api/admin/analytics/dashboard",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"admin",
@@ -2551,12 +2729,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/admin/analytics/kpis",
+							"raw": "http://{{baseUrl}}:{{port}}/api/admin/analytics/kpis",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"admin",
@@ -2578,12 +2756,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/admin/analytics/kpis",
+									"raw": "http://{{baseUrl}}:{{port}}/api/admin/analytics/kpis",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"admin",
@@ -2611,12 +2789,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/resumen?from=2025-02-01&to=2025-02-28",
+							"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/resumen?from=2025-02-01&to=2025-02-28",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"analytics",
@@ -2648,12 +2826,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/resumen?from=2025-02-01&to=2025-12-28",
+									"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/resumen?from=2025-02-01&to=2025-12-28",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"analytics",
@@ -2697,12 +2875,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/serie?from=2025-02-01&to=2025-12-28",
+							"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/serie?from=2025-02-01&to=2025-12-28",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"analytics",
@@ -2734,12 +2912,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/serie?from=2025-02-01&to=2025-12-28",
+									"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/serie?from=2025-02-01&to=2025-12-28",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"analytics",
@@ -2777,12 +2955,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/composicion?from=2025-02-01&to=2025-12-28",
+							"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/composicion?from=2025-02-01&to=2025-12-28",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"analytics",
@@ -2814,12 +2992,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/composicion?from=2025-12-01&to=2025-12-28",
+									"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/composicion?from=2025-12-01&to=2025-12-28",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"analytics",
@@ -2857,12 +3035,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/dti?from=2025-02-01&to=2025-12-28",
+							"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/dti?from=2025-02-01&to=2025-12-28",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"analytics",
@@ -2894,12 +3072,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/dti?from=2025-02-01&to=2025-12-28",
+									"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/dti?from=2025-02-01&to=2025-12-28",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"analytics",
@@ -2937,12 +3115,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/variacion?año=2025&mes=3",
+							"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/variacion?aÃ±o=2025&mes=3",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"analytics",
@@ -2951,7 +3129,7 @@
 							],
 							"query": [
 								{
-									"key": "año",
+									"key": "aÃ±o",
 									"value": "2025"
 								},
 								{
@@ -2974,12 +3152,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/analytics/usuario/variacion?año=2025&mes=3",
+									"raw": "http://{{baseUrl}}:{{port}}/api/analytics/usuario/variacion?aÃ±o=2025&mes=3",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"analytics",
@@ -2988,7 +3166,7 @@
 									],
 									"query": [
 										{
-											"key": "año",
+											"key": "aÃ±o",
 											"value": "2025"
 										},
 										{
@@ -3017,12 +3195,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analytics/admin/cohortes?from=2025-02-01&to=2025-03-31",
+							"raw": "http://{{baseUrl}}:{{port}}/api/analytics/admin/cohortes?from=2025-02-01&to=2025-03-31",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"analytics",
@@ -3054,12 +3232,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/analytics/admin/cohortes?from=2025-02-01&to=2025-03-31",
+									"raw": "http://{{baseUrl}}:{{port}}/api/analytics/admin/cohortes?from=2025-02-01&to=2025-03-31",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"analytics",
@@ -3097,12 +3275,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/analytics/admin/segmentacion?from=2025-02-01&to=2025-02-28",
+							"raw": "http://{{baseUrl}}:{{port}}/api/analytics/admin/segmentacion?from=2025-02-01&to=2025-02-28",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"analytics",
@@ -3134,12 +3312,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/analytics/admin/segmentacion?from=2025-02-01&to=2025-02-28",
+									"raw": "http://{{baseUrl}}:{{port}}/api/analytics/admin/segmentacion?from=2025-02-01&to=2025-02-28",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"analytics",
@@ -3183,7 +3361,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tipo\": \"presupuesto-mensual\",\r\n    \"montoObjetivo\": 6000,\r\n    \"mes\": 3,\r\n    \"año\": 2025\r\n}",
+							"raw": "{\r\n    \"tipo\": \"presupuesto-mensual\",\r\n    \"montoObjetivo\": 6000,\r\n    \"mes\": 3,\r\n    \"aÃ±o\": 2025\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3191,12 +3369,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/metas",
+							"raw": "http://{{baseUrl}}:{{port}}/api/metas",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"metas"
@@ -3217,7 +3395,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"tipo\": \"presupuesto-mensual\",\r\n    \"montoObjetivo\": 6000,\r\n    \"mes\": 3,\r\n    \"año\": 2025\r\n}",
+									"raw": "{\r\n    \"tipo\": \"presupuesto-mensual\",\r\n    \"montoObjetivo\": 6000,\r\n    \"mes\": 3,\r\n    \"aÃ±o\": 2025\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3225,12 +3403,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/metas",
+									"raw": "http://{{baseUrl}}:{{port}}/api/metas",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"metas"
@@ -3263,12 +3441,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/metas",
+									"raw": "http://{{baseUrl}}:{{port}}/api/metas",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"metas"
@@ -3294,12 +3472,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/metas/{{metaId}}/progreso",
+							"raw": "http://{{baseUrl}}:{{port}}/api/metas/{{metaId}}/progreso",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"metas",
@@ -3321,12 +3499,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/metas/{{metaId}}/progreso",
+									"raw": "http://{{baseUrl}}:{{port}}/api/metas/{{metaId}}/progreso",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"metas",
@@ -3363,12 +3541,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/metas/{{metaId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/metas/{{metaId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"metas",
@@ -3398,12 +3576,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/metas/{{metaId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/metas/{{metaId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"metas",
@@ -3436,12 +3614,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/metas/usuario/{usuarioId}/activas/count",
+							"raw": "http://{{baseUrl}}:{{port}}/api/metas/usuario/{usuarioId}/activas/count",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"metas",
@@ -3465,12 +3643,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/metas/usuario/{{usuarioId}}/activas/count",
+									"raw": "http://{{baseUrl}}:{{port}}/api/metas/usuario/{{usuarioId}}/activas/count",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"metas",
@@ -3512,7 +3690,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"tipo\": \"conocimiento\",\r\n  \"tema\": \"ahorro\",\r\n  \"nivel\": \"basico\",\r\n  \"dimension\": \"habitos\",\r\n  \"pregunta\": \"¿Cuál es un buen hábito de ahorro?\",\r\n  \"respuestas\": [\r\n    { \"inciso\": \"a\", \"texto\": \"Ahorrar una parte fija del ingreso\", \"correcta\": true },\r\n    { \"inciso\": \"b\", \"texto\": \"Gastar todo el ingreso\", \"correcta\": false }\r\n  ]\r\n}",
+							"raw": "{\r\n  \"tipo\": \"conocimiento\",\r\n  \"tema\": \"ahorro\",\r\n  \"nivel\": \"basico\",\r\n  \"dimension\": \"habitos\",\r\n  \"pregunta\": \"Â¿CuÃ¡l es un buen hÃ¡bito de ahorro?\",\r\n  \"respuestas\": [\r\n    { \"inciso\": \"a\", \"texto\": \"Ahorrar una parte fija del ingreso\", \"correcta\": true },\r\n    { \"inciso\": \"b\", \"texto\": \"Gastar todo el ingreso\", \"correcta\": false }\r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3520,12 +3698,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/preguntas",
+							"raw": "http://{{baseUrl}}:{{port}}/api/preguntas",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"preguntas"
@@ -3546,7 +3724,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"tipo\": \"conocimiento\",\r\n  \"tema\": \"ahorro\",\r\n  \"nivel\": \"basico\",\r\n  \"dimension\": \"habitos\",\r\n  \"pregunta\": \"¿Cuál es un buen hábito de ahorro?\",\r\n  \"respuestas\": [\r\n    { \"inciso\": \"a\", \"texto\": \"Ahorrar una parte fija del ingreso\", \"correcta\": true },\r\n    { \"inciso\": \"b\", \"texto\": \"Gastar todo el ingreso\", \"correcta\": false }\r\n  ]\r\n}",
+									"raw": "{\r\n  \"tipo\": \"conocimiento\",\r\n  \"tema\": \"ahorro\",\r\n  \"nivel\": \"basico\",\r\n  \"dimension\": \"habitos\",\r\n  \"pregunta\": \"Â¿CuÃ¡l es un buen hÃ¡bito de ahorro?\",\r\n  \"respuestas\": [\r\n    { \"inciso\": \"a\", \"texto\": \"Ahorrar una parte fija del ingreso\", \"correcta\": true },\r\n    { \"inciso\": \"b\", \"texto\": \"Gastar todo el ingreso\", \"correcta\": false }\r\n  ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3554,12 +3732,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/preguntas",
+									"raw": "http://{{baseUrl}}:{{port}}/api/preguntas",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"preguntas"
@@ -3585,12 +3763,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/preguntas",
+							"raw": "http://{{baseUrl}}:{{port}}/api/preguntas",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"preguntas"
@@ -3610,12 +3788,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/preguntas",
+									"raw": "http://{{baseUrl}}:{{port}}/api/preguntas",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"preguntas"
@@ -3639,12 +3817,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/preguntas?nivel=basico",
+									"raw": "http://{{baseUrl}}:{{port}}/api/preguntas?nivel=basico",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"preguntas"
@@ -3676,12 +3854,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/preguntas/export",
+							"raw": "http://{{baseUrl}}:{{port}}/api/preguntas/export",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"preguntas",
@@ -3702,12 +3880,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/preguntas/export",
+									"raw": "http://{{baseUrl}}:{{port}}/api/preguntas/export",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"preguntas",
@@ -3734,12 +3912,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/preguntas/{{preguntaId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/preguntas/{{preguntaId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"preguntas",
@@ -3760,12 +3938,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/preguntas/{{preguntaId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/preguntas/{{preguntaId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"preguntas",
@@ -3801,12 +3979,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/preguntas/{{preguntaId}}",
+							"raw": "http://{{baseUrl}}:{{port}}/api/preguntas/{{preguntaId}}",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"preguntas",
@@ -3836,12 +4014,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/preguntas/{{preguntaId}}",
+									"raw": "http://{{baseUrl}}:{{port}}/api/preguntas/{{preguntaId}}",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"preguntas",
@@ -3868,12 +4046,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/preguntas/sugerencias?nivel=basico&temas=ahorro,inversion&limit=10",
+							"raw": "http://{{baseUrl}}:{{port}}/api/preguntas/sugerencias?nivel=basico&temas=ahorro,inversion&limit=10",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"preguntas",
@@ -3908,12 +4086,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/preguntas/sugerencias?nivel=basico&temas=ahorro,inversion&limit=10",
+									"raw": "http://{{baseUrl}}:{{port}}/api/preguntas/sugerencias?nivel=basico&temas=ahorro,inversion&limit=10",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"preguntas",
@@ -3963,12 +4141,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/examenes",
+							"raw": "http://{{baseUrl}}:{{port}}/api/examenes",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"examenes"
@@ -3997,12 +4175,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/examenes",
+									"raw": "http://{{baseUrl}}:{{port}}/api/examenes",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"examenes"
@@ -4034,12 +4212,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:4000/api/examenes/generar?nivel=basico&temas=ahorro,inversion&limite=5",
+							"raw": "http://localhost:{{port}}/api/examenes/generar?nivel=basico&temas=ahorro,inversion&limite=5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"examenes",
@@ -4074,12 +4252,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://localhost:4000/api/examenes/generar?nivel=basico&temas=ahorro,inversion&limite=5",
+									"raw": "http://localhost:{{port}}/api/examenes/generar?nivel=basico&temas=ahorro,inversion&limite=5",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"examenes",
@@ -4140,12 +4318,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/simulators{{simulador}}/entries",
+							"raw": "http://{{baseUrl}}:{{port}}/api/simulators{{simulador}}/entries",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"simulators{{simulador}}",
@@ -4180,12 +4358,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/savings/entries",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/savings/entries",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4225,12 +4403,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/compound/entries",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/compound/entries",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4265,12 +4443,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/bonds/entries",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/bonds/entries",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4311,12 +4489,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/credit-card/entries",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/credit-card/entries",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4351,12 +4529,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/loan/entries",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/loan/entries",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4391,12 +4569,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/debt-payoff/entries",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/debt-payoff/entries",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4431,12 +4609,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/bonds/entries",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/bonds/entries",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4464,12 +4642,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:4000/api/simulators/{{simulador}}/entries?scope=all|user|cloud&page=1&limit=20",
+							"raw": "http://{{baseUrl}}:{{port}}/api/simulators/{{simulador}}/entries?scope=all|user|cloud&page=1&limit=20",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"simulators",
@@ -4505,12 +4683,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/{{simulador}}/entries?scope=all&page=1&limit=20",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/{{simulador}}/entries?scope=all&page=1&limit=20",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4550,12 +4728,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/{{simulador}}/entries?scope=user&page=1&limit=20",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/{{simulador}}/entries?scope=user&page=1&limit=20",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4595,12 +4773,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://{{baseUrl}}:4000/api/simulators/{{simulador}}/entries?scope=cloud&page=1&limit=20",
+									"raw": "http://{{baseUrl}}:{{port}}/api/simulators/{{simulador}}/entries?scope=cloud&page=1&limit=20",
 									"protocol": "http",
 									"host": [
 										"{{baseUrl}}"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4642,12 +4820,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:4000/api/simulators/{{simulador}}/entries/{{simulacionId}}",
+							"raw": "http://localhost:{{port}}/api/simulators/{{simulador}}/entries/{{simulacionId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"simulators",
@@ -4670,12 +4848,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://localhost:4000/api/simulators/{{simulador}}/entries/{{simulacionId}}",
+									"raw": "http://localhost:{{port}}/api/simulators/{{simulador}}/entries/{{simulacionId}}",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4685,10 +4863,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
-							"header": [],
+							"_postman_previewlanguage": null,
+							"header": null,
 							"cookie": [],
-							"body": ""
+							"body": null
 						}
 					]
 				},
@@ -4704,12 +4882,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:4000/api/simulators/{{simulador}}/entries/{{simulacionId}}",
+							"raw": "http://localhost:{{port}}/api/simulators/{{simulador}}/entries/{{simulacionId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"simulators",
@@ -4732,12 +4910,12 @@
 									}
 								],
 								"url": {
-									"raw": "http://localhost:4000/api/simulators/{{simulador}}/entries/{{simulacionId}}",
+									"raw": "http://localhost:{{port}}/api/simulators/{{simulador}}/entries/{{simulacionId}}",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "4000",
+									"port": "{{port}}",
 									"path": [
 										"api",
 										"simulators",
@@ -4747,12 +4925,68 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
-							"header": [],
+							"_postman_previewlanguage": null,
+							"header": null,
 							"cookie": [],
-							"body": ""
+							"body": null
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "Categorias",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{accessToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{baseUrl}}:{{port}}/api/categories",
+					"protocol": "http",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Categorias",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{baseUrl}}:{{port}}/api/categories",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
 				}
 			]
 		}
@@ -4831,6 +5065,11 @@
 		{
 			"key": "simulacionId",
 			"value": ""
+		},
+		{
+			"key": "port",
+			"value": "",
+			"type": "default"
 		}
 	]
 }

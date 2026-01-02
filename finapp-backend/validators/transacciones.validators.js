@@ -42,3 +42,6 @@ export const usuarioIdParamSchema = Joi.object({
 export const transaccionIdParamSchema = Joi.object({
   id: Joi.string().hex().length(24).required(),
 });
+
+// Bulk creation: array de transacciones
+export const crearTransaccionesBulkSchema = Joi.array().items(crearTransaccionSchema).min(1).max(500);
