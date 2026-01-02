@@ -36,3 +36,9 @@ export const buscarPreguntasQuerySchema = Joi.object({
 export const importPreguntasSchema = Joi.array().items(crearPreguntaSchema).min(1).required();
 
 export const preguntaIdParamSchema = Joi.object({ id: Joi.string().hex().length(24).required() });
+
+// Permitir POST de una sola pregunta o de un arreglo
+export const crearPreguntaOrArraySchema = Joi.alternatives().try(
+  crearPreguntaSchema,
+  Joi.array().items(crearPreguntaSchema).min(1)
+);

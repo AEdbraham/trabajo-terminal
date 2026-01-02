@@ -431,6 +431,60 @@
         "responses": {"204": {"description":"Eliminada"},"404":{"description":"No encontrada"}},
         "security": [{"BearerAuth": []}]
       }
+    },
+    "/api/preguntas": {
+      "post": {
+        "tags": ["preguntas"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "required": ["tipo","tema","nivel","pregunta","respuestas"],
+                    "properties": {
+                      "tipo": {"type":"string","enum":["conocimiento","percepcion"]},
+                      "tema": {"type":"string","enum":["ahorro","inversion","credito","control-gastos","general"]},
+                      "nivel": {"type":"string","enum":["basico","intermedio","avanzado"]},
+                      "dimension": {"type":"string"},
+                      "pregunta": {"type":"string"},
+                      "respuestas": {"type":"array","minItems":2,"maxItems":4,
+                        "items": {"type":"object","required":["inciso","texto","correcta"],
+                          "properties": {"inciso":{"type":"string","enum":["a","b","c","d"]},"texto":{"type":"string"},"correcta":{"type":"boolean"}}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "required": ["tipo","tema","nivel","pregunta","respuestas"],
+                      "properties": {
+                        "tipo": {"type":"string","enum":["conocimiento","percepcion"]},
+                        "tema": {"type":"string","enum":["ahorro","inversion","credito","control-gastos","general"]},
+                        "nivel": {"type":"string","enum":["basico","intermedio","avanzado"]},
+                        "dimension": {"type":"string"},
+                        "pregunta": {"type":"string"},
+                        "respuestas": {"type":"array","minItems":2,"maxItems":4,
+                          "items": {"type":"object","required":["inciso","texto","correcta"],
+                            "properties": {"inciso":{"type":"string","enum":["a","b","c","d"]},"texto":{"type":"string"},"correcta":{"type":"boolean"}}
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {"201": {"description": "Creada"}},
+        "security": [{"BearerAuth": []}]
+      }
     }
   }
 }

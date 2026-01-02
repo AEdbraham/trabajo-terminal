@@ -2,8 +2,13 @@ import Pregunta from "../models/Pregunta.js";
 import asyncHandler from "../utils/asyncHandler.js";
 
 export const crearPregunta = asyncHandler(async (req, res) => {
-  const pregunta = await Pregunta.create(req.body);
-  res.status(201).json(pregunta);
+  if (Array.isArray(req.body)) {
+    const creadas = await Pregunta.insertMany(req.body, { ordered: true });
+    return res.status(201).json({ inserted: creadas.length, data: creadas });
+  } else {
+    const pregunta = await Pregunta.create(req.body);
+    return res.status(201).json(pregunta);
+  }
 });
 
 export const listarPreguntas = asyncHandler(async (req, res) => {
