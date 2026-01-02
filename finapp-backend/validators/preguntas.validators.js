@@ -7,13 +7,14 @@ const respuestaSchema = Joi.object({
 });
 
 export const crearPreguntaSchema = Joi.object({
+  id: Joi.string().optional(),
   tipo: Joi.string().valid('conocimiento','percepcion').required(),
   tema: Joi.string().valid('ahorro','inversion','credito','control-gastos','general').required(),
   nivel: Joi.string().valid('basico','intermedio','avanzado').required(),
   dimension: Joi.string().allow('', null).optional(),
   pregunta: Joi.string().min(5).required(),
   respuestas: Joi.array().items(respuestaSchema).min(2).max(4).required()
-}).custom((value, helpers) => {
+}).unknown(true).custom((value, helpers) => {
   const correctas = (value.respuestas || []).filter(r => r.correcta).length;
   if (correctas < 1) return helpers.error('any.invalid');
   return value;
