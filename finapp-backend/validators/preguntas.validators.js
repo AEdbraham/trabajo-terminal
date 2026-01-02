@@ -16,7 +16,14 @@ export const crearPreguntaSchema = Joi.object({
   respuestas: Joi.array().items(respuestaSchema).min(2).max(4).required()
 }).unknown(true).custom((value, helpers) => {
   const correctas = (value.respuestas || []).filter(r => r.correcta).length;
-  if (correctas < 1) return helpers.error('any.invalid');
+  // Para preguntas de conocimiento, requerimos al menos una correcta
+  if (value.tipo === 'conocimiento') {
+    if (correctas < 1) return helpers.error('any.invalid');
+  }
+  // Para preguntas de percepción, no debe haber respuestas marcadas como correctas
+  if (value.tipo === 'percepcion') {
+    if (correctas > 0) return helpers.error('any.invalid');
+  }
   return value;
 }, 'al menos una respuesta correcta');
 
