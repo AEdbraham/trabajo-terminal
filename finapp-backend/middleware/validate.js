@@ -16,6 +16,22 @@ export const validate = (schema) => {
   };
 };
 
+// Validador flexible: si body es arreglo, usa arraySchema; si no, objSchema
+export const validateFlexible = (objSchema, arraySchema) => {
+  return (req, res, next) => {
+    const schemaToUse = Array.isArray(req.body) ? arraySchema : objSchema;
+    const { error, value } = schemaToUse.validate(req.body, { abortEarly: false, stripUnknown: true });
+    if (error) {
+      return res.status(400).json({
+        message: 'Validación fallida',
+        details: error.details.map(d => ({ message: d.message, path: d.path }))
+      });
+    }
+    req.body = value;
+    next();
+  };
+};
+
 // Helper para validar params con un schema Joi
 export const validateParams = (schema) => {
   return (req, res, next) => {

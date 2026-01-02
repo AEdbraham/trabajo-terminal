@@ -43,3 +43,5 @@ export const crearPreguntaOrArraySchema = Joi.alternatives().try(
   crearPreguntaSchema,
   Joi.array().items(crearPreguntaSchema).min(1)
 );
+
+export const crearPreguntaArraySchema = Joi.array().items(crearPreguntaSchema).min(1);
