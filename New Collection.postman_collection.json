@@ -1,6 +1,6 @@
-﻿{
+{
 	"info": {
-		"_postman_id": "3471875e-99fb-494e-b55f-1cffdd5bcace",
+		"_postman_id": "112db8db-2297-45cc-abad-60aff8178349",
 		"name": "New Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "44864965"
@@ -63,7 +63,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -108,10 +108,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -169,10 +169,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Login contraseÃ±a incorrecta",
@@ -208,10 +208,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Login correo no encontrado",
@@ -247,10 +247,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -308,7 +308,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -353,10 +353,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Refresh vacio",
@@ -392,10 +392,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -456,10 +456,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				}
@@ -517,10 +517,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Usuarios (admin) rol incorrecto",
@@ -546,10 +546,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -641,10 +641,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -699,10 +699,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Usuario by id (admin) inexistente",
@@ -729,10 +729,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -805,10 +805,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -871,10 +871,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -933,10 +933,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1013,10 +1013,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				}
@@ -1094,10 +1094,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1146,10 +1146,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n\"titulo\":\"IntroducciÃ³n al ahorro\",\r\n\"cuerpo\":\"Ahorra el 10%\",\r\n\"categoria\":\"finanzas\",\r\n\"nivel\":\"bÃ¡sico\"\r\n}"
-								},
 								"url": {
 									"raw": "http://{{baseUrl}}:{{port}}/api/education/capsules/{{contenidoId}}",
 									"protocol": "http",
@@ -1165,10 +1161,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Capsula educativa inexistente",
@@ -1181,10 +1177,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n\"titulo\":\"IntroducciÃ³n al ahorro\",\r\n\"cuerpo\":\"Ahorra el 10%\",\r\n\"categoria\":\"finanzas\",\r\n\"nivel\":\"bÃ¡sico\"\r\n}"
-								},
 								"url": {
 									"raw": "http://{{baseUrl}}:{{port}}/api/education/capsules/591d7a79df9c0be4edd06f5c",
 									"protocol": "http",
@@ -1200,10 +1192,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1283,7 +1275,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -1329,10 +1321,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1407,10 +1399,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Capsula educativa (admin) no permitido",
@@ -1447,7 +1439,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -1539,7 +1531,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -1589,10 +1581,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1661,10 +1653,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Disike",
@@ -1698,10 +1690,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1759,10 +1751,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"titulo\": \"InterÃ©s compuesto\",\r\n    \"cuerpo\": \"ExplicaciÃ³n breve...\",\r\n    \"tipo\": \"capsula\",\r\n    \"nivel\": \"bÃ¡sico\",\r\n    \"quiz\": {\r\n        \"preguntas\": [\r\n            {\r\n                \"enunciado\": \"Â¿QuÃ© es interÃ©s compuesto?\",\r\n                \"opciones\": [\r\n                    {\r\n                        \"texto\": \"InterÃ©s solo sobre capital inicial\",\r\n                        \"correcta\": false\r\n                    },\r\n                    {\r\n                        \"texto\": \"InterÃ©s sobre capital + intereses previos\",\r\n                        \"correcta\": true\r\n                    }\r\n                ],\r\n                \"explicacionCorrecta\": \"Se reinvierten los intereses.\"\r\n            }\r\n        ]\r\n    }\r\n}"
-								},
 								"url": {
 									"raw": "http://{{baseUrl}}:{{port}}/api/education/capsules?page=1&limit=2",
 									"protocol": "http",
@@ -1787,7 +1775,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -1872,10 +1860,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Transaccion tipo invalido",
@@ -1910,10 +1898,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1970,10 +1958,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Transaccion usuario pagina",
@@ -2011,10 +1999,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Transaccion usuario por fecha",
@@ -2057,10 +2045,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Transaccion usuario por tipo",
@@ -2094,10 +2082,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Transaccion usuario error fecha",
@@ -2135,10 +2123,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -2193,7 +2181,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -2229,10 +2217,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -2305,10 +2293,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -2363,10 +2351,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -2425,10 +2413,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -2445,7 +2433,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "[\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"ingreso\", \"monto\": 1500, \"fecha\": \"2025-12-09T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"ingreso\", \"monto\": 1500, \"fecha\": \"2025-12-23T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-11T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-13T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-17T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-19T10:00:00.000Z\" },\r\n{ \"usuarioId\": \"{{usuarioId}}\", \"tipo\": \"egreso\", \"monto\": 300, \"fecha\": \"2025-12-27T10:00:00.000Z\" }\r\n]",
+							"raw": "[\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"ingreso\",\r\n        \"monto\": 18000,\r\n        \"fecha\": \"2026-01-01T10:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50f4\",\r\n        \"subcategoria\": \"Sueldo\",\r\n        \"etiquetas\": [\r\n            \"ingreso\",\r\n            \"nomina\"\r\n        ]\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 1200,\r\n        \"fecha\": \"2026-01-03T13:20:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50d4\",\r\n        \"subcategoria\": \"Supermercado\",\r\n        \"metodoPago\": \"tarjeta\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 500,\r\n        \"fecha\": \"2026-01-04T09:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee0eb726042af8e50cb\",\r\n        \"subcategoria\": \"Electricidad (CFE)\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 200,\r\n        \"fecha\": \"2026-01-05T18:30:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50cf\",\r\n        \"subcategoria\": \"Público (Metro, Metrobús, RTP)\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 1500,\r\n        \"fecha\": \"2026-01-06T12:15:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50d7\",\r\n        \"subcategoria\": \"Pago a tarjeta de crédito\",\r\n        \"metodoPago\": \"tarjeta\",\r\n        \"etiquetas\": [\r\n            \"deuda\",\r\n            \"tarjeta\"\r\n        ]\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 300,\r\n        \"fecha\": \"2026-01-07T11:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50d7\",\r\n        \"subcategoria\": \"Intereses\",\r\n        \"metodoPago\": \"tarjeta\",\r\n        \"etiquetas\": [\r\n            \"interes\",\r\n            \"tarjeta\"\r\n        ]\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 1000,\r\n        \"fecha\": \"2026-01-08T08:50:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50dc\",\r\n        \"subcategoria\": \"Aporte a ahorro\",\r\n        \"etiquetas\": [\r\n            \"ahorro\"\r\n        ]\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 199,\r\n        \"fecha\": \"2026-01-09T21:10:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50e2\",\r\n        \"subcategoria\": \"Streaming (Netflix, Spotify, etc.)\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 350,\r\n        \"fecha\": \"2026-01-10T16:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50f0\",\r\n        \"subcategoria\": \"Farmacia\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 7000,\r\n        \"fecha\": \"2026-01-11T10:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50d5\",\r\n        \"subcategoria\": \"Renta / Hipoteca\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"ingreso\",\r\n        \"monto\": 120,\r\n        \"fecha\": \"2026-01-12T09:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50fb\",\r\n        \"subcategoria\": \"Intereses (cuentas, pagarés)\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"ingreso\",\r\n        \"monto\": 300,\r\n        \"fecha\": \"2026-01-13T14:30:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e5100\",\r\n        \"subcategoria\": \"Reembolso de gastos\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 250,\r\n        \"fecha\": \"2026-01-14T12:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50e8\",\r\n        \"subcategoria\": \"Alimento\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 800,\r\n        \"fecha\": \"2026-01-15T19:40:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50ee\",\r\n        \"subcategoria\": \"Cursos/Capacitaciones (en línea o presencial)\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 500,\r\n        \"fecha\": \"2026-01-16T08:10:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50d9\",\r\n        \"subcategoria\": \"SAT (ISR/IVA), derechos, multas\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"ingreso\",\r\n        \"monto\": 4000,\r\n        \"fecha\": \"2025-12-20T10:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50f2\",\r\n        \"subcategoria\": \"Freelance/Contratos\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 450,\r\n        \"fecha\": \"2025-12-22T20:15:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50d4\",\r\n        \"subcategoria\": \"Restaurantes y cafés\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 900,\r\n        \"fecha\": \"2025-12-23T11:45:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50cf\",\r\n        \"subcategoria\": \"Combustible (gasolina)\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 200,\r\n        \"fecha\": \"2025-12-24T17:30:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50ec\",\r\n        \"subcategoria\": \"Donativos\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 180,\r\n        \"fecha\": \"2025-12-25T21:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50e2\",\r\n        \"subcategoria\": \"Cine/Conciertos/Eventos\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 600,\r\n        \"fecha\": \"2025-12-26T09:30:00.000Z\",\r\n        \"categoriaId\": \"69581ee0eb726042af8e50cb\",\r\n        \"subcategoria\": \"Internet/Telefonía (Telmex, Izzi, Totalplay)\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 350,\r\n        \"fecha\": \"2025-12-27T13:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee0eb726042af8e50cb\",\r\n        \"subcategoria\": \"Celular (Telcel, AT&T, Movistar)\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 500,\r\n        \"fecha\": \"2025-12-28T08:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50dc\",\r\n        \"subcategoria\": \"Aporte CETES/GBM/u otro bróker\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"ingreso\",\r\n        \"monto\": 1200,\r\n        \"fecha\": \"2025-12-29T12:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50f6\",\r\n        \"subcategoria\": \"Marketplace/Local\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"ingreso\",\r\n        \"monto\": 1000,\r\n        \"fecha\": \"2025-12-30T15:45:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e50f8\",\r\n        \"subcategoria\": \"Remesas\"\r\n    },\r\n    {\r\n        \"usuarioId\": \"{{usuarioId}}\",\r\n        \"tipo\": \"egreso\",\r\n        \"monto\": 100,\r\n        \"fecha\": \"2026-01-02T10:00:00.000Z\",\r\n        \"categoriaId\": \"69581ee1eb726042af8e5107\",\r\n        \"subcategoria\": \"Transferencia interna\",\r\n        \"esTransferenciaInterna\": true,\r\n        \"etiquetas\": [\r\n            \"transferencia\"\r\n        ]\r\n    }\r\n]",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2542,7 +2530,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -2587,10 +2575,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -2645,10 +2633,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				}
@@ -2710,10 +2698,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -2770,10 +2758,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -2850,7 +2838,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -2936,10 +2924,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3016,10 +3004,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3096,10 +3084,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3176,10 +3164,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3256,10 +3244,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3336,10 +3324,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				}
@@ -3415,10 +3403,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Metas ahorro",
@@ -3453,10 +3441,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3513,10 +3501,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3589,7 +3577,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -3659,7 +3647,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -3724,7 +3712,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"tipo\": \"conocimiento\",\r\n  \"tema\": \"ahorro\",\r\n  \"nivel\": \"basico\",\r\n  \"dimension\": \"habitos\",\r\n  \"pregunta\": \"Â¿CuÃ¡l es un buen hÃ¡bito de ahorro?\",\r\n  \"respuestas\": [\r\n    { \"inciso\": \"a\", \"texto\": \"Ahorrar una parte fija del ingreso\", \"correcta\": true },\r\n    { \"inciso\": \"b\", \"texto\": \"Gastar todo el ingreso\", \"correcta\": false }\r\n  ]\r\n}",
+									"raw": "[\r\n    {\r\n        \"id\": \"Q001\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es un presupuesto personal?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Un plan para asignar ingresos a gastos y ahorro\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Una lista de deseos para comprar\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Un préstamo del banco\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Un estado de cuenta\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q002\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Cuál es un ejemplo de gasto fijo?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Renta/hipoteca\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Cine\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Antojos\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Regalo ocasional\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q003\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué significa “gasto discrecional”?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Gasto no esencial que puedes reducir o evitar\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Gasto obligatorio por contrato\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Impuesto fijo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Pago de deuda\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q004\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"general\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es una transferencia interna (cuenta A → B)?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Mover dinero entre tus propias cuentas\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Un ingreso nuevo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Un gasto de consumo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Una inversión con rendimiento\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q005\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es un fondo de emergencia?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Ahorro disponible para imprevistos\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Dinero para vacaciones\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Crédito disponible\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Una inversión a 10 años\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q006\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Cuál es una forma simple de ahorrar sin “sentirlo” tanto?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Automatizar un ahorro fijo al recibir ingresos\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Gastar primero y ahorrar si sobra\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Usar la tarjeta para todo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Ignorar los gastos pequeños\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q007\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es el pago mínimo de una tarjeta de crédito?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"La cantidad mínima para no caer en mora ese periodo\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"El total de la deuda\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Un descuento del banco\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Un pago que elimina intereses\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q008\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué reduce más intereses en tarjeta?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Pagar más del mínimo y antes de la fecha límite\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Pagar solo el mínimo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Diferir todo a meses\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"No revisar el estado de cuenta\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q009\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es diversificación en inversiones?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Repartir el dinero en distintos activos para reducir riesgo\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poner todo en un solo activo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Comprar solo efectivo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Invertir solo cuando sube\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q010\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué describe mejor el interés compuesto?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Intereses que generan nuevos intereses con el tiempo\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Interés fijo sin reinversión\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Solo aplica a tarjetas de crédito\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Es lo mismo que inflación\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q011\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Para KPIs, por qué conviene excluir transferencias internas del gasto neto?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Porque no representan consumo real, solo movimiento entre cuentas\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Porque siempre son ingresos\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Porque siempre son egresos\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Porque se vuelven inversión automáticamente\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q012\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"Tasa de ahorro = (ingresos − egresos de consumo) / ingresos. Si suben tus gastos, ¿qué pasa con la tasa?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Tiende a bajar\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Tiende a subir\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"No cambia\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Se vuelve negativa por definición\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q013\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"DTI (deuda/ingreso) mensual es:\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Pagos mensuales de deuda / ingreso mensual\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Ingreso mensual / pagos de deuda\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Deuda total / gasto mensual\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Ahorro mensual / ingreso mensual\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q014\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"Si una inversión tiene rendimiento real negativo, significa que:\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Rinde menos que la inflación\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Siempre pierdes nominalmente\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"No existe la inflación\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Es ilegal\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q015\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"general\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Cuál NO es un ejemplo de “egreso de consumo”?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Depósito a ahorro/inversión\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Supermercado\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Transporte público\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Medicamentos\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q016\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan seguido registras tus gastos?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nunca\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"A veces\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Casi siempre\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Siempre\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q017\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan difícil se te hace ahorrar cada mes?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Muy difícil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Algo difícil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Poco difícil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Nada difícil\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q018\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"Cuando usas tarjeta de crédito, ¿qué tan seguro te sientes de poder pagar a tiempo?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada seguro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco seguro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Seguro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy seguro\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q019\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"general\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan estresado/a te sientes por tu situación financiera hoy?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Muy estresado/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Algo estresado/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Poco estresado/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Nada estresado/a\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q020\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tanta confianza tienes en invertir (aunque sea poco)?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada de confianza\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poca\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Media\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Mucha\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q021\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué etiqueta ayuda a analizar “necesidades vs gustos”?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Esencial/Discrecional\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Hogar/Personal\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Mensual/Anual\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Activo/Pasivo\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q022\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué etiqueta ayuda a analizar “estabilidad del gasto”?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Fijo/Variable\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Esencial/Discrecional\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Hogar/Personal\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Bruto/Neto\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q023\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué estrategia suele pagar menos intereses total si mantienes pagos altos?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Avalancha (primero la tasa más alta)\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Bola de nieve (primero saldo más pequeño)\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Pagar mínimo siempre\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Dejar de pagar 1 mes\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q024\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es CAT (en términos simples)?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Costo anual total del crédito (tasa + comisiones) aproximado\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"La comisión por retiro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"La tasa diaria\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"El límite de crédito\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q025\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"Mayor riesgo normalmente implica:\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Mayor variación (volatilidad) en resultados\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Rendimiento garantizado\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Cero pérdidas posibles\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Inflación cero\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q026\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"Cuando gastas “de más”, ¿qué tan probable es que ajustes tu plan esa misma semana?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy probable\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q027\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan cómodo/a te sientes con un ahorro automático (descuento al recibir ingresos)?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada cómodo/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco cómodo/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Cómodo/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy cómodo/a\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q028\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan seguido revisas la fecha de corte y pago de tus créditos?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nunca\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"A veces\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Casi siempre\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Siempre\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q029\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tanto te preocupa perder dinero si inviertes?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Mucho\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Algo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Poco\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Nada\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q030\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"general\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan claro tienes tu objetivo financiero principal para los próximos 3 meses?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada claro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco claro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Claro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy claro\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q031\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"Fondo de emergencia (en meses) se aproxima con:\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Ahorro líquido / gasto mensual\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Ingreso mensual / gasto mensual\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Deuda total / ingreso mensual\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Inversión total / gasto anual\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q032\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Cuál opción suele ser más costosa si no pagas el total en tarjeta?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Revolver saldo (no liquidar) con tasa alta\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Pagar el total antes de la fecha límite\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Usar meses sin intereses y pagar puntual\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Pagar un extra al capital\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q033\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es rendimiento “real”?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Rendimiento ajustado por inflación\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Rendimiento mensual\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Rendimiento antes de impuestos\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Rendimiento garantizado\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q034\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Para qué sirve etiquetar “recurrente/no-recurrente”?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Para detectar gastos sorpresa y estacionales\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Para calcular inflación\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Para aumentar el límite de crédito\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Para evitar impuestos\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q035\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"general\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Cuál movimiento NO debería inflar tus ingresos netos en reportes?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Préstamo recibido\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Salario\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Honorarios\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Renta\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q036\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan preparado/a te sientes ante una emergencia de 1 mes de gastos?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada preparado/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco preparado/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Preparado/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy preparado/a\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q037\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan cómodo/a te sientes viendo el total de intereses que pagas al mes?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada cómodo/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco cómodo/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Cómodo/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy cómodo/a\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q038\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan dispuesto/a estás a recortar 10% de gastos discrecionales este mes?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada dispuesto/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco dispuesto/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Dispuesto/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy dispuesto/a\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q039\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan cómodo/a te sientes invirtiendo a 12 meses sin tocar ese dinero?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada cómodo/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco cómodo/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Cómodo/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy cómodo/a\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q040\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"general\",\r\n        \"nivel\": \"avanzado\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan claro tienes cuánto puedes ahorrar sin afectar necesidades básicas?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada claro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco claro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Claro\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy claro\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q041\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es una categoría COICOP 01?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Alimentos y bebidas no alcohólicas\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Educación\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Transporte\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Salud\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q042\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿COICOP 04 corresponde a…?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Vivienda, agua, electricidad, gas y combustibles\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Restaurantes y hoteles\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Comunicaciones\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Recreación y cultura\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q043\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿COICOP 07 corresponde a…?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Transporte\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Seguros\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Educación\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Vestido\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q044\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Cuál etiqueta ayuda a comparar “hogar vs personal” sin romper COICOP?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Hogar/Personal\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Bruto/Neto\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Mensual/Anual\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Activo/Pasivo\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q045\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué práctica suele mejorar el cumplimiento de una meta de ahorro?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Aportes periódicos y automáticos\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Aportar solo cuando sobra\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"No medir el progreso\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Evitar separar el dinero\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q046\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan útil sería para ti recibir alertas cuando te acercas al límite del mes?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada útil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco útil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Útil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy útil\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q047\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan seguido te sorprende el monto de tu estado de cuenta?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Siempre\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"A veces\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Rara vez\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Nunca\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q048\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan probable es que uses una app si te muestra progreso en metas con gráficas?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy probable\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q049\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tanto te gustaría comparar tu gasto vs promedios (benchmark) tipo ENIGH?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Algo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Mucho\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q050\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"general\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan fácil te resulta entender una gráfica de “ingresos vs egresos”?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada fácil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco fácil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Fácil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy fácil\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q051\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué pasa si pagas el total de tu tarjeta antes de la fecha límite (sin intereses del periodo)?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Evitas generar intereses del saldo del periodo\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Te suben el CAT\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Te cobran doble\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Se cancela la tarjeta\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q052\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es una meta de ahorro a plazo?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Objetivo con monto y fecha/plazo definidos\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Gastar menos sin medirlo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Un préstamo para comprar algo\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Una inversión obligatoria\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q053\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué es “split” de tickets en control de gastos?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Dividir un gasto en varias categorías/subcategorías\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Duplicar el gasto\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Eliminar un gasto\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Convertir egreso en ingreso\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q054\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"general\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Cuál es un ejemplo de movimiento “financiero/capital”?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Pago de tarjeta o depósito a inversión\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Supermercado\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Transporte\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Medicamentos\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q055\",\r\n        \"tipo\": \"conocimiento\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"basico\",\r\n        \"dimension\": \"conocimiento_puro\",\r\n        \"pregunta\": \"¿Qué significa “liquidez” en una inversión?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Qué tan fácil es convertirla en efectivo sin perder valor\",\r\n                \"correcta\": true\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Que siempre sube\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Que no paga impuestos\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Que es gratis\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q056\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"control-gastos\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan probable es que clasifiques tus egresos con COICOP si la app te sugiere subcategorías?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy probable\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q057\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"ahorro\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan motivante te resulta ver un “% completado” de tu meta de ahorro?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada motivante\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco motivante\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Motivante\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy motivante\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q058\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"credito\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan dispuesto/a estás a ver recomendaciones cuando tu DTI suba?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada dispuesto/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco dispuesto/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Dispuesto/a\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy dispuesto/a\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q059\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"inversion\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan útil sería para ti comparar “rendimiento nominal vs real” en la app?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada útil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco útil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Útil\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy útil\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"Q060\",\r\n        \"tipo\": \"percepcion\",\r\n        \"tema\": \"general\",\r\n        \"nivel\": \"intermedio\",\r\n        \"dimension\": \"sentir\",\r\n        \"pregunta\": \"¿Qué tan probable es que exportes tu reporte mensual (PDF/Excel) si está en un botón?\",\r\n        \"respuestas\": [\r\n            {\r\n                \"inciso\": \"a\",\r\n                \"texto\": \"Nada probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"b\",\r\n                \"texto\": \"Poco probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"c\",\r\n                \"texto\": \"Probable\",\r\n                \"correcta\": false\r\n            },\r\n            {\r\n                \"inciso\": \"d\",\r\n                \"texto\": \"Muy probable\",\r\n                \"correcta\": false\r\n            }\r\n        ]\r\n    }\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3744,10 +3732,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3800,10 +3788,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Preguntas (admin) params",
@@ -3835,10 +3823,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3893,10 +3881,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3951,10 +3939,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -4027,10 +4015,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -4113,10 +4101,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -4187,7 +4175,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -4252,10 +4240,10 @@
 									}
 								],
 								"url": {
-									"raw": "http://localhost:{{port}}/api/examenes/generar?nivel=basico&temas=ahorro,inversion&limite=5",
+									"raw": "http://{{baseUrl}}:{{port}}/api/examenes/generar?nivel=basico&temas=ahorro,inversion&limite=5&tipo=conocimiento",
 									"protocol": "http",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
 									"port": "{{port}}",
 									"path": [
@@ -4275,11 +4263,15 @@
 										{
 											"key": "limite",
 											"value": "5"
+										},
+										{
+											"key": "tipo",
+											"value": "conocimiento"
 										}
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -4372,10 +4364,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Simulacion compound",
@@ -4417,10 +4409,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Simulacion bonds",
@@ -4457,7 +4449,7 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": "",
+							"_postman_previewlanguage": "Text",
 							"header": [],
 							"cookie": [
 								{
@@ -4503,10 +4495,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Simulacion loan",
@@ -4543,10 +4535,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Simulacion debt-payoff",
@@ -4583,10 +4575,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Simulacion nube",
@@ -4623,10 +4615,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -4711,10 +4703,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Simulaciones usuario",
@@ -4756,10 +4748,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						},
 						{
 							"name": "Simulaciones nube",
@@ -4801,10 +4793,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -4863,10 +4855,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -4925,10 +4917,10 @@
 									]
 								}
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "Text",
+							"header": [],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				}
@@ -4983,10 +4975,10 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": null,
-					"header": null,
+					"_postman_previewlanguage": "Text",
+					"header": [],
 					"cookie": [],
-					"body": null
+					"body": ""
 				}
 			]
 		}
@@ -5068,8 +5060,7 @@
 		},
 		{
 			"key": "port",
-			"value": "",
-			"type": "default"
+			"value": ""
 		}
 	]
 }
