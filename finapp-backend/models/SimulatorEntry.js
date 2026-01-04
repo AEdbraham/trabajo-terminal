@@ -13,6 +13,7 @@ const simulatorEntrySchema = new mongoose.Schema({
     ],
     required: true
   },
+  nombre: { type: String, trim: true, maxlength: 120 },
   tipo: { type: String, enum: ["usuario", "nube"], required: true },
   usuarioID: { type: mongoose.Schema.Types.ObjectId, ref: "Usuario" },
   creadoPor: { type: mongoose.Schema.Types.ObjectId, ref: "Usuario", required: true },

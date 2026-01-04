@@ -13,6 +13,7 @@ export const simuladorWithIdParamSchema = Joi.object({
 
 export const createEntryBaseSchema = Joi.object({
   tipo: Joi.string().valid('usuario','nube').required(),
+  nombre: Joi.string().max(120).optional(),
   input: Joi.object().required(),
 });
 

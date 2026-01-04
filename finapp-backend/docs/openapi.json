@@ -108,6 +108,7 @@
         "properties": {
           "_id": { "type": "string" },
           "simulador": { "type": "string", "enum": ["savings","compound","bonds","credit-card","loan","debt-payoff"] },
+          "nombre": { "type": ["string","null"] },
           "tipo": { "type": "string", "enum": ["usuario","nube"] },
           "usuarioID": { "type": ["string","null"] },
           "creadoPor": { "type": "string" },
@@ -120,6 +121,7 @@
         "required": ["tipo","input"],
         "properties": {
           "tipo": { "type": "string", "enum": ["usuario","nube"] },
+          "nombre": { "type": "string" },
           "input": { "type": "object", "additionalProperties": true }
         }
       }

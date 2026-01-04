@@ -57,7 +57,7 @@ function validateInput(simulador, input) {
 
 export const createEntry = asyncHandler(async (req, res) => {
   const simulador = req.params.simulador;
-  const { tipo, input } = req.body;
+  const { tipo, nombre, input } = req.body;
   if (!['usuario','nube'].includes(tipo)) {
     return res.status(400).json({ message: 'tipo inválido: use usuario|nube' });
   }
@@ -72,6 +72,7 @@ export const createEntry = asyncHandler(async (req, res) => {
   const doc = await SimulatorEntry.create({
     simulador,
     tipo,
+    nombre,
     usuarioID: tipo === 'usuario' ? req.user.id : undefined,
     creadoPor: req.user.id,
     input: value,
