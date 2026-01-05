@@ -2657,7 +2657,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:{{port}}/api/admin/analytics/dashboard",
+							"raw": "http://{{baseUrl}}:{{port}}/api/analytics/dashboard",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
@@ -2665,7 +2665,6 @@
 							"port": "{{port}}",
 							"path": [
 								"api",
-								"admin",
 								"analytics",
 								"dashboard"
 							]
@@ -2708,16 +2707,15 @@
 				{
 					"name": "Analytics kpis(admin)",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{adminAccessToken}}",
-								"type": "text"
+								"value": "Bearer {{adminAccessToken}}"
 							}
 						],
 						"url": {
-							"raw": "http://{{baseUrl}}:{{port}}/api/admin/analytics/kpis",
+							"raw": "http://{{baseUrl}}:{{port}}/api/analytics/admin/kpis/generar?usuarioId={{usuarioId}}&from=2025-12-01T00:00:00Z&to=2026-01-31T23:59:59Z",
 							"protocol": "http",
 							"host": [
 								"{{baseUrl}}"
@@ -2725,9 +2723,24 @@
 							"port": "{{port}}",
 							"path": [
 								"api",
-								"admin",
 								"analytics",
-								"kpis"
+								"admin",
+								"kpis",
+								"generar"
+							],
+							"query": [
+								{
+									"key": "usuarioId",
+									"value": "{{usuarioId}}"
+								},
+								{
+									"key": "from",
+									"value": "2025-12-01T00:00:00Z"
+								},
+								{
+									"key": "to",
+									"value": "2026-01-31T23:59:59Z"
+								}
 							]
 						}
 					},
@@ -4342,7 +4355,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"tipo\": \"usuario\",\r\n    \"input\": {\r\n        \"goalAmount\": 50000,\r\n        \"months\": 12,\r\n        \"initialAmount\": 0,\r\n        \"annualRate\": 5\r\n    }\r\n}",
+									"raw": "{\r\n    \"tipo\": \"usuario\",\r\n    \"nombre\": \"sim1\",\r\n    \"input\": {\r\n        \"goalAmount\": 50000,\r\n        \"months\": 12,\r\n        \"initialAmount\": 0,\r\n        \"annualRate\": 5\r\n    }\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
