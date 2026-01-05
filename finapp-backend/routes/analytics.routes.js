@@ -36,6 +36,7 @@ router.get("/usuario/resumen", requireAuth, validateQuery(resumenQuerySchema), r
 router.get("/usuario/racha", requireAuth, validateQuery(rachaQuerySchema), rachaRegistroUsuario);
 router.get("/usuario/dti", requireAuth, validateQuery(dtiQuerySchema), dtiUsuario);
 router.get("/usuario/variacion", requireAuth, validateQuery(variacionMensualSchema), variacionMensualUsuario);
+router.post("/usuario/kpis/generarKpisUser", requireAuth, validateQuery(generarKpisAdminSchema), generarKpisUsuario);
 router.get("/admin/cohortes", requireAuth, requireRole("administrador"), validateQuery(cohortesAdminSchema), cohortesAdmin);
 router.get("/admin/segmentacion", requireAuth, requireRole("administrador"), validateQuery(segmentacionAdminSchema), segmentacionAdmin);
 router.post("/admin/kpis/generar", requireAuth, requireRole("administrador"), validateQuery(generarKpisAdminSchema), generarKpisUsuario);
