@@ -20,7 +20,8 @@ import {
 	rachaQuerySchema,
 	dtiQuerySchema
 } from "../validators/analytics.validators.js";
-import { variacionMensualSchema, cohortesAdminSchema, segmentacionAdminSchema } from "../validators/analytics.validators.js";
+import { variacionMensualSchema, cohortesAdminSchema, segmentacionAdminSchema, generarKpisAdminSchema } from "../validators/analytics.validators.js";
+import { generarKpisUsuario } from "../controllers/analytics.controller.js";
 
 const router = Router();
 
@@ -37,5 +38,6 @@ router.get("/usuario/dti", requireAuth, validateQuery(dtiQuerySchema), dtiUsuari
 router.get("/usuario/variacion", requireAuth, validateQuery(variacionMensualSchema), variacionMensualUsuario);
 router.get("/admin/cohortes", requireAuth, requireRole("administrador"), validateQuery(cohortesAdminSchema), cohortesAdmin);
 router.get("/admin/segmentacion", requireAuth, requireRole("administrador"), validateQuery(segmentacionAdminSchema), segmentacionAdmin);
+router.post("/admin/kpis/generar", requireAuth, requireRole("administrador"), validateQuery(generarKpisAdminSchema), generarKpisUsuario);
 
 export default router;

@@ -36,7 +36,7 @@ export const obtenerKPIs = asyncHandler(async (req, res) => {
   const filtro = usuarioId ? { usuarioId } : {};
   const ultimo = await IndicadorKPI.findOne(filtro).sort({ fechaCalculo: -1 });
   if (!ultimo) return res.status(404).json({ message: "No hay KPIs calculados" });
-  res.json(ultimo);a
+  res.json(ultimo);
 });
 
 // Serie temporal mensual de ingresos y egresos
@@ -342,4 +342,78 @@ export const segmentacionAdmin = asyncHandler(async (req, res) => {
   });
 
   res.json({ periodo: { from, to }, grupos: Object.values(grupos), detalles: items });
+});
+
+// Generar KPIs para un usuario en un rango (admin)
+export const generarKpisUsuario = asyncHandler(async (req, res) => {
+  const usuarioId = toObjectId(req.query.usuarioId);
+  if (!usuarioId) return res.status(400).json({ message: "usuarioId inválido" });
+  const from = req.query.from ? new Date(req.query.from) : null;
+  const to = req.query.to ? new Date(req.query.to) : null;
+  // Defaults: mes actual
+  const now = new Date();
+  const inicioDef = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1));
+  const finDef = new Date();
+  const inicio = from || inicioDef;
+  const fin = to || finDef;
+
+  // Categorías clave (mejor esfuerzo por nombre)
+  const [catInv, catDeuda] = await Promise.all([
+    Categoria.findOne({ nombre: /Ahorro e Invers[ií]on/i }),
+    Categoria.findOne({ nombre: /Deuda y Comisiones/i })
+  ]);
+
+  const match = { usuarioId, fecha: { $gte: inicio, $lte: fin }, $or: [ { esTransferenciaInterna: { $exists: false } }, { esTransferenciaInterna: { $ne: true } } ] };
+
+  const condIngreso = { $eq: ["$tipo", "ingreso"] };
+  const condEgreso = { $eq: ["$tipo", "egreso"] };
+  const condInv = catInv ? { $and: [condEgreso, { $eq: ["$categoriaId", catInv._id] }] } : false;
+  const condDeuda = catDeuda ? { $and: [condEgreso, { $eq: ["$categoriaId", catDeuda._id] }] } : false;
+
+  const totalAgg = await Transaccion.aggregate([
+    { $match: match },
+    { $group: {
+      _id: null,
+      ingresos: { $sum: { $cond: [condIngreso, "$monto", 0] } },
+      egresos: { $sum: { $cond: [condEgreso, "$monto", 0] } },
+      inversiones: { $sum: { $cond: [condInv || false, "$monto", 0] } },
+      endeudamiento: { $sum: { $cond: [condDeuda || false, "$monto", 0] } }
+    } }
+  ]);
+  const base = totalAgg[0] || { ingresos: 0, egresos: 0, inversiones: 0, endeudamiento: 0 };
+  const ahorro = (base.ingresos || 0) - (base.egresos || 0);
+
+  // Frecuencia de registro (días con actividad / días del periodo)
+  const diasAgg = await Transaccion.aggregate([
+    { $match: match },
+    { $project: { dia: { $dateToString: { format: "%Y-%m-%d", date: "$fecha" } } } },
+    { $group: { _id: "$dia" } },
+    { $count: "dias" }
+  ]);
+  const diasConActividad = diasAgg[0]?.dias || 0;
+  const totalDias = Math.max(1, Math.floor((fin - inicio) / (1000*60*60*24)) + 1);
+  const frecuenciaRegistro = diasConActividad / totalDias;
+
+  // Tendencia vs último KPI del usuario
+  const anterior = await IndicadorKPI.findOne({ usuarioId }).sort({ fechaCalculo: -1 });
+  let tendenciaActual = "estable";
+  if (anterior && typeof anterior.ahorro === 'number') {
+    const baseRef = Math.abs(anterior.ahorro) > 1 ? Math.abs(anterior.ahorro) : 1; // evita división por ~0
+    const cambio = (ahorro - (anterior.ahorro || 0)) / baseRef;
+    if (cambio > 0.05) tendenciaActual = "positiva";
+    else if (cambio < -0.05) tendenciaActual = "negativa";
+  }
+
+  const doc = await IndicadorKPI.create({
+    usuarioId,
+    fechaCalculo: new Date(),
+    ingresos: base.ingresos || 0,
+    egresos: base.egresos || 0,
+    ahorro,
+    inversiones: base.inversiones || 0,
+    endeudamiento: base.endeudamiento || 0,
+    frecuenciaRegistro,
+    tendenciaActual
+  });
+  res.status(201).json(doc);
 });

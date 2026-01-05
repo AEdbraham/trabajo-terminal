@@ -35,3 +35,9 @@ export const segmentacionAdminSchema = Joi.object({
   from: Joi.date().iso().required(),
   to: Joi.date().iso().min(Joi.ref('from')).required()
 });
+
+export const generarKpisAdminSchema = Joi.object({
+  usuarioId: Joi.string().hex().length(24).required(),
+  from: Joi.date().iso().optional(),
+  to: Joi.date().iso().min(Joi.ref('from')).optional()
+});

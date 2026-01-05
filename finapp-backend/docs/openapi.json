@@ -351,6 +351,21 @@
         "responses": {"200": {"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"periodo":{"type":"object"},"grupos":{"type":"array","items":{"$ref":"#/components/schemas/SegmentoItem"}},"detalles":{"type":"array","items":{"type":"object"}}}}}}}}
       }
     },
+    "/api/analytics/admin/kpis/generar": {
+      "post": {
+        "tags": ["analytics-admin"],
+        "parameters": [
+          {"name":"usuarioId","in":"query","required":true,"schema":{"type":"string"}},
+          {"name":"from","in":"query","schema":{"type":"string","format":"date-time"}},
+          {"name":"to","in":"query","schema":{"type":"string","format":"date-time"}}
+        ],
+        "responses": {
+          "201": {"description":"Generado","content":{"application/json":{"schema":{"type":"object"}}}},
+          "400": {"description":"Solicitud inválida"}
+        },
+        "security": [{"BearerAuth": []}]
+      }
+    },
     "/api/metas": {
       "post": {
         "tags": ["metas"],
