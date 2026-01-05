@@ -17,6 +17,7 @@ router.get("/sugerencias", requireAuth, sugerirPreguntas);
 router.post("/", requireAuth, requireRole("administrador"), validateFlexible(crearPreguntaSchema, crearPreguntaArraySchema), crearPregunta);
 router.get("/", requireAuth, requireRole("administrador"), validateQuery(buscarPreguntasQuerySchema), listarPreguntas);
 router.get("/:id", requireAuth, requireRole("administrador"), validateParams(preguntaIdParamSchema), obtenerPregunta);
+router.get("/userQuestions/:id", requireAuth, validateParams(preguntaIdParamSchema), obtenerPregunta);
 router.patch("/:id", requireAuth, requireRole("administrador"), validateParams(preguntaIdParamSchema), validate(actualizarPreguntaSchema), actualizarPregunta);
 router.delete("/:id", requireAuth, requireRole("administrador"), validateParams(preguntaIdParamSchema), eliminarPregunta);
 
